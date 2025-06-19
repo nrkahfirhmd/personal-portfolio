@@ -19,22 +19,28 @@ export default function Hero()
                         A generalist who learns about everything that he find interesting. Always searching for meaning behind every step.
                         Accompany me in becoming a long life learner!
                     </p>
-                    <div className="flex gap-1">
+                    <div className="flex gap-1 group items-center">
                         <p className="text-xs">
-                            find my blog in <span className="underline cursor-pointer">here</span>
+                            find my blog in <a target="_blank" href="https://medium.com/@nrkahfirhmd" className="underline cursor-pointer">here</a>
                         </p>
-                        <FaFeatherPointed className="w-4 h-4" />
+                        <FaFeatherPointed className="w-4 h-4 group-hover:w-5 group-hover:h-5 transition-all duration-300" />
                     </div>
                     <div className="flex gap-4 items-center">
-                        <div className="px-4 py-2 rounded-lg w-fit cursor-poiniter border border-black dark:border-white cursor-pointer">
+                        <a target="_blank" href="https://drive.google.com/file/d/1puYUxvQuN_4SjU_iAoUibdumpFHM5WDA/view?usp=drive_link" className="px-4 py-2 rounded-lg w-fit cursor-poiniter border border-black dark:border-white cursor-pointer transition-transform duration-300 hover:scale-102 hover:border-blue-200 hover:text-blue-200">
                             See my CV!
-                        </div>
-                        <div className="px-2 py-2 border border-black dark:border-white rounded-full cursor-pointer">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/nrkahfirhmd/" 
+                            className="px-2 py-2 border border-black dark:border-white rounded-full cursor-pointer transition-transform duration-300 hover:scale-110 hover:-rotate-5 hover:border-blue-200 hover:text-blue-200"
+                        >
                             <FaLinkedinIn />
-                        </div>
-                        <div className="px-2 py-2 border border-black dark:border-white rounded-full cursor-pointer">
-                            <FaGithub />
-                        </div>
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://github.com/nrkahfirhmd"
+                            className="px-2 py-2 border border-black dark:border-white rounded-full cursor-pointer transition-transform duration-300 hover:scale-110 hover:-rotate-5 hover:border-blue-200 hover:text-blue-200"
+                        >
+                        <FaGithub/>
+                        </a>
                     </div>
                 </div>
             </div>

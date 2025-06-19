@@ -1,5 +1,8 @@
-import { FaDatabase, FaGit, FaJs, FaLaravel, FaPython, FaRProject, FaUnity } from "react-icons/fa"
-import { SiCodeigniter, SiExpress, SiNextdotjs, SiPytorch, SiTensorflow } from "react-icons/si"
+import { BsFillBarChartFill } from "react-icons/bs"
+import { CgWebsite } from "react-icons/cg"
+import { FaDatabase, FaGit, FaGithub, FaJs, FaLaravel, FaPython, FaReact, FaRProject, FaUnity } from "react-icons/fa"
+import { IoLogoTableau } from "react-icons/io5"
+import { SiCodeigniter, SiExpress, SiMysql, SiNextdotjs, SiPytorch, SiStreamlit, SiTensorflow } from "react-icons/si"
 
 // export const personalStatistics = [
 //     { number: 6, desc: "Projects Completed" },
@@ -11,16 +14,18 @@ import { SiCodeigniter, SiExpress, SiNextdotjs, SiPytorch, SiTensorflow } from "
 export const techStack = [
     { icon: <FaGit/>, label: "Git" },
     { icon: <FaPython/>, label: "Python" },
-    { icon: <FaJs/>, label: "JavaScript" },
     { icon: <SiTensorflow/>, label: "Tensorflow" },
     { icon: <SiPytorch/>, label: "Pytorch" },
-    { icon: <FaDatabase/>, label: "SQL" },
+    { icon: <FaRProject/>, label: "R" },
+    { icon: <BsFillBarChartFill />, label: "Power BI" },
+    { icon: <IoLogoTableau />, label: "Tableau" },
+    { icon: <SiMysql />, label: "MySQL" },
+    { icon: <FaReact />, label: "React" },
     { icon: <SiNextdotjs/>, label: "Next.js" },
     { icon: <SiExpress/>, label: "Express.js" },
     { icon: <FaLaravel/>, label: "Laravel" },
     { icon: <SiCodeigniter/>, label: "Code Igniter" },
     { icon: <FaUnity/>, label: "Unity" },
-    { icon: <FaRProject/>, label: "R" },
 ]
 
 export const personalEducation = [
@@ -73,47 +78,82 @@ export const personalWorks = [
 
 export const personalProjects = [
     {
-        screenshot: "", 
+        screenshot: "/src/assets/thumb/nyisa.png", 
         name: "Nyisa",
         desc: "Build recommender system using TF-IDF and Cosine Similarity to give user food recommendations based on recent transactions.",
         skills: [
-            ""
+            "Recommendation System",
+            "TF-IDF",
+            "Cosine Similarity",
+            "Microservices API"
         ],
         sources: [
-            { icon: "", label: "" }
+            { 
+                icon: <CgWebsite />, 
+                label: "Website", 
+                link: "https://nyisa.store/"
+            }
         ]
     },
     {
-        screenshot: "",
+        screenshot: "/src/assets/thumb/agriclime.png",
         name: "AgriClime",
         desc: "Created forecasting and classification model to predict surrounding attributes and its weather.",
         skills: [
-            ""
+            "Tensorflow",
+            "Service API",
+            "Data Scraping",
+            "Multi Inference",
+            "ML Ops"
         ],
         sources: [
-            { icon: "", label: "" }
+            { 
+                icon: <FaGithub/>, 
+                label: "Github", 
+                link: "https://github.com/nrkahfirhmd/agriclime-ml"
+            }
         ]
     },
     {
-        screenshot: "",
+        screenshot: "/src/assets/thumb/stock-market-predictor.png",
         name: "Stock Market Predictor",
         desc: "Build predictive model for stock market price using Yahoo! Finance data scraping and Linear Regression",
         skills: [
-            ""
+            "Data Scraping",
+            "Machine Learning",
+            "Forecasting",
+            "Financial Technology",
+            "ML Ops"
         ],
         sources: [
-            { icon: "", label: "" }
+            { 
+                icon: <SiStreamlit />,
+                label: "Streamlit", 
+                link: "https://stockmarket-predict.streamlit.app/"
+            },
+            { 
+                icon: <FaGithub/>, 
+                label: "Github", 
+                link: "https://github.com/nrkahfirhmd/stock-market-predict"
+            }
         ]
     },
     {
-        screenshot: "",
+        screenshot: "/src/assets/thumb/credit-risk.png",
         name: "Credit Risk Analysis",
         desc: "Analyze the reasons for loan rejection and predict the likelihood of loan acceptance based on user attributes",
         skills: [
-            ""
+            "Financial Technology",
+            "ML Ops",
+            "Data Analysis & Visualization",
+            "Predictive Modelling"
         ],
         sources: [
-            { icon: "", label: "" }
+            { 
+                icon: <FaGithub/>, 
+                label: "Github", 
+                link: "https://github.com/nrkahfirhmd/rakamin-idx"
+            }
         ]
     },
 ]

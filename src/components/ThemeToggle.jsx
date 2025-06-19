@@ -24,7 +24,7 @@ export default function ThemeToggle()
     return (
         <button
             onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer dark:text-white text-black"
+            className="cursor-pointer dark:text-white text-black transition-transform duration-300 hover:scale-110"
         >
             {darkMode ? <MdSunny /> : <IoMdMoon />}
         </button>
