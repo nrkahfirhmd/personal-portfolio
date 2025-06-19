@@ -30,7 +30,7 @@ export const techStack = [
 
 export const personalEducation = [
     {
-        logo: "/src/assets/logo/unpad.png",
+        logo: "/logo/unpad.png",
         duration: "Aug 2022 - Present",
         company: "Padjadjaran University",
         position: "Computer Science Undergrad",
@@ -42,7 +42,7 @@ export const personalEducation = [
 
 export const personalWorks = [
     {
-        logo: "/src/assets/logo/bangkit.jpg",
+        logo: "/logo/bangkit.jpg",
         duration: "Sep 2024 - Jan 2025",
         company: "Bangkit Academy",
         position: "Machine Learning Cohort",
@@ -53,7 +53,7 @@ export const personalWorks = [
         ]
     },
     {
-        logo: "/src/assets/logo/unpad.png",
+        logo: "/logo/unpad.png",
         duration: "Jan 2024 - Dec 2024",
         company: "Padjadjaran University",
         position: "Laboratory Practicum Assistants",
@@ -64,7 +64,7 @@ export const personalWorks = [
         ]
     },
     {
-        logo: "/src/assets/logo/idx.png",
+        logo: "/logo/idx.png",
         duration: "Jan 2024 - Feb 2024",
         company: "Rakamin x ID/X Partners",
         position: "Data Scientist Intern",
@@ -78,7 +78,7 @@ export const personalWorks = [
 
 export const personalProjects = [
     {
-        screenshot: "/src/assets/thumb/nyisa.png", 
+        screenshot: "/thumb/nyisa.png", 
         name: "Nyisa",
         desc: "Build recommender system using TF-IDF and Cosine Similarity to give user food recommendations based on recent transactions.",
         skills: [
@@ -96,7 +96,7 @@ export const personalProjects = [
         ]
     },
     {
-        screenshot: "/src/assets/thumb/agriclime.png",
+        screenshot: "/thumb/agriclime.png",
         name: "AgriClime",
         desc: "Created forecasting and classification model to predict surrounding attributes and its weather.",
         skills: [
@@ -115,7 +115,7 @@ export const personalProjects = [
         ]
     },
     {
-        screenshot: "/src/assets/thumb/stock-market-predictor.png",
+        screenshot: "/thumb/stock-market-predictor.png",
         name: "Stock Market Predictor",
         desc: "Build predictive model for stock market price using Yahoo! Finance data scraping and Linear Regression",
         skills: [
@@ -139,7 +139,7 @@ export const personalProjects = [
         ]
     },
     {
-        screenshot: "/src/assets/thumb/credit-risk.png",
+        screenshot: "/thumb/credit-risk.png",
         name: "Credit Risk Analysis",
         desc: "Analyze the reasons for loan rejection and predict the likelihood of loan acceptance based on user attributes",
         skills: [

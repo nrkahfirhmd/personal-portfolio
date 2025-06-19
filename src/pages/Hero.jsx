@@ -7,7 +7,7 @@ export default function Hero()
         <div className="py-16 flex flex-col justify-center items-center">
             <div className="flex flex-col md:flex-row gap-8 w-full justify-between items-center">
                 <div className="h-full rounded-lg w-50 md:min-w-45">
-                    <img src="/src/assets/profile.jpg" alt="profile" className="w-full h-full object-cover rounded-lg" />
+                    <img src="/profile.jpg" alt="profile" className="w-full h-full object-cover rounded-lg" />
                 </div>
 
                 <div className="flex flex-col gap-4 text-black dark:text-white w-full">
