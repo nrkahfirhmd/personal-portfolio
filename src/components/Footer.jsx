@@ -13,7 +13,7 @@ export default function Footer()
                     <div>Amran Rahmada.</div>
                 </div>
                 
-                <p className="font-thin text-xs">&copy; 2025</p>
+                <p className="font-light text-xs">&copy; 2025</p>
 
                 <div className="flex gap-2">
                     <FaLinkedin className="w-6 h-6 cursor-pointer" />

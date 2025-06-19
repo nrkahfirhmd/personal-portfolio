@@ -1,5 +1,6 @@
 import { FaHandPointRight } from "react-icons/fa";
 import Projects from "../components/Projects";
+import { personalProjects } from "../utils/data";
 
 export default function Showcase()
 {
@@ -13,12 +14,17 @@ export default function Showcase()
                         <FaHandPointRight />
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                    < Projects />
-                    < Projects />
-                    < Projects />
-                    < Projects />
-                    < Projects />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    { personalProjects.map((data, index) => (
+                        <Projects
+                            key={index}
+                            screenshot={data.screenshot}
+                            name={data.name}
+                            desc={data.desc}
+                            skills={data.skills}
+                            sources={data.sources}
+                        />
+                    )) }
                 </div>
             </div>
         </>
