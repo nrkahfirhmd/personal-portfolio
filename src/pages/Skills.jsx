@@ -1,4 +1,3 @@
-import { FaPython } from "react-icons/fa";
 import { techStack } from "../utils/data";
 
 export default function Skills()

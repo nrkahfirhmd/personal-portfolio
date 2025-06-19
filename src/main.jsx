@@ -7,8 +7,8 @@ import Footer from './components/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='w-screen flex justify-center h-screen dark:bg-[#242424] bg-[#ffffff]'>
-      <div className='w-full max-w-2xl flex flex-col px-4 md:px-0'>
+    <div className='w-full flex justify-center h-fit dark:bg-[#242424] bg-[#ffffff]'>
+      <div className='w-full md:max-w-2xl flex flex-col px-4 md:px-0'>
         <Navbar/>
         <App />
         <Footer/>

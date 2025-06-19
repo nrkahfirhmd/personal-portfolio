@@ -1,13 +1,16 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { personalStatistics } from "../utils/data"
 import { FaFeatherPointed } from "react-icons/fa6"
 
 export default function Hero()
 {   
     return (
         <div className="py-16 flex flex-col justify-center items-center">
-            <div className="flex flex-col-reverse md:flex-row gap-8 w-full justify-between items-center">
-                <div className="flex flex-col gap-4 text-black dark:text-white">
+            <div className="flex flex-col md:flex-row gap-8 w-full justify-between items-center">
+                <div className="h-full rounded-lg w-50 md:min-w-45">
+                    <img src="/src/assets/profile.jpg" alt="profile" className="w-full h-full object-cover rounded-lg" />
+                </div>
+
+                <div className="flex flex-col gap-4 text-black dark:text-white w-full">
                     <div className="flex flex-col gap-2">
                         <h3 className="font-bold text-4xl">Hi! I am Kahfi!👋🏻</h3>
                         <h2 className="text-xl">AI Engineer & Data Analyst.</h2>
@@ -33,10 +36,6 @@ export default function Hero()
                             <FaGithub />
                         </div>
                     </div>
-                </div>
-                
-                <div className="h-full rounded-lg w-50 md:min-w-45">
-                    <img src="/src/assets/profile.jpg" alt="profile" className="w-full h-full object-cover rounded-lg" />
                 </div>
             </div>
 
