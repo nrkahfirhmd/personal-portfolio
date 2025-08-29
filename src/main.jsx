@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Cursor from './components/Cursor'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
         <Navbar/>
         <App />
         <Footer/>
+        <Cursor/>
       </div>
     </div>
   </StrictMode>
