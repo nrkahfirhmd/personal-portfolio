@@ -1,11 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 import { FaArrowRightLong, FaLinkedin, FaMedium } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 
 export default function Footer()
 {
     return (
-        <div className="pt-12">
+        <div className="pt-12 px-4">
             <div className="w-full rounded-md p-2 border-1 border-(--light-fg)/25 dark:border-(--dark-fg)/25 gap-8 md:gap-4 flex flex-col overflow-hidden">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:p-12">
                     <div className="font-bold flex flex-col">

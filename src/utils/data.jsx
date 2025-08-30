@@ -157,3 +157,31 @@ export const personalProjects = [
         ]
     },
 ]
+
+export const peopleTestimony = [
+    {
+        image: "profile.jpg",
+        name: "Rayhan Athar",
+        message: "Keren mas"
+    },
+    {
+        image: "profile.jpg",
+        name: "Umar",
+        message: "Walach"
+    },
+    {
+        image: "profile.jpg",
+        name: "Rayhan Athar",
+        message: "Keren mas"
+    },
+    {
+        image: "profile.jpg",
+        name: "Rayhan Athar",
+        message: "Keren mas"
+    },
+    {
+        image: "profile.jpg",
+        name: "Rayhan Athar",
+        message: "Keren mas"
+    },
+]

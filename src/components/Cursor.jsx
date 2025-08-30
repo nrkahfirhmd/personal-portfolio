@@ -13,7 +13,7 @@ export default function Cursor()
     let cursorEnlarged = useState(false);
 
     const onMouseMove = event => {
-        const { pageX: x, pageY: y } = event;
+        const { clientX: x, clientY: y } = event;
         setMousePosition({ x, y });
         positionDot(event);
     };
@@ -69,8 +69,8 @@ export default function Cursor()
         cursorVisible.current = true;
         toggleCursorVisibility();
 
-        endX = e.pageX;
-        endY = e.pageY;
+        endX = e.clientX;
+        endY = e.clientY;
         cursorDot.current.style.top = endY + "px";
         cursorDot.current.style.left = endX + "px";
     }
