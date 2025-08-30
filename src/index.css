@@ -13,13 +13,18 @@ body * {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #DCD7C9;
+  background-color: #2C3333;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --dark-bg: #2C3333;
+  --dark-fg: #DCD7C9;
+  --light-bg: #E7FBE6;
+  --light-fg: #27391C;
 }
 
 body {

@@ -124,11 +124,11 @@ export default function Cursor()
     return (
         <>
             <div
-                className={`fixed w-8 h-8 border border-2 border-black/25 dark:border-white/25 rounded-full pointer-events-none opacity-0 transition-transform z-9999`}
+                className={`hidden md:block fixed w-8 h-8 border border-2 border-black/25 dark:border-white/25 rounded-full pointer-events-none opacity-0 transition-transform z-9999`}
                 ref={cursorDotOutline}
             />
             <div
-                className={`fixed w-2 h-2 bg-black dark:bg-white rounded-full pointer-events-none opacity-0 transition-transform z-9999`}
+                className={`hidden md:block fixed w-2 h-2 bg-black dark:bg-white rounded-full pointer-events-none opacity-0 transition-transform z-9999`}
                 ref={cursorDot}
             />
         </>

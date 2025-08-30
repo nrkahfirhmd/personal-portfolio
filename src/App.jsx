@@ -9,9 +9,9 @@ export default function App()
         <>
             <div className="flex flex-col gap-12">
                 <Hero/>
-                <Experiences />
+                {/* <Experiences />
                 <Skills/>
-                <Showcase/>
+                <Showcase/> */}
             </div>
         </>
     )
