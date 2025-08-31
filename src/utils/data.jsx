@@ -4,6 +4,8 @@ import { FaDatabase, FaGit, FaGithub, FaJs, FaLaravel, FaPython, FaReact, FaRPro
 import { IoLogoTableau } from "react-icons/io5"
 import { SiCodeigniter, SiExpress, SiMysql, SiNextdotjs, SiPytorch, SiStreamlit, SiTensorflow } from "react-icons/si"
 
+export const CVLink = "https://drive.google.com/file/d/1HXmg55788wwLjkgeVSbsvLMDU1kLGiRw/preview"
+
 // export const personalStatistics = [
 //     { number: 6, desc: "Projects Completed" },
 //     { number: 10, desc: "Datasets Analyzed" },

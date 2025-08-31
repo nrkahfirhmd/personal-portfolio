@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { peopleTestimony } from "../utils/data";
 import { SiReaddotcv } from "react-icons/si";
 import { FaAngleRight } from "react-icons/fa";
+import Viewer from '../components/Viewer'
 
 export default function Hero()
 {   
@@ -9,6 +10,7 @@ export default function Hero()
     const cursorMask = useRef();
     const cursorVisible = useRef();
     const heroRef = useRef()
+    const [view, setView] = useState(false);
 
     const onMouseMove = event => {
         const { clientX: x, clientY: y } = event;
@@ -81,9 +83,12 @@ export default function Hero()
                     I blend Artificial Intelligence and Software Engineering to build smart, scalable, and transformative products.
                 </div>
                 <div className="flex gap-2">
-                    <button className="flex gap-2 py-4 items-center px-6 bg-(--light-fg)/25 backdrop-blur-[2px] border-2 border-white/50 dark:border-black/50 dark:bg-(--dark-fg)/25 rounded-md">
-                        <SiReaddotcv size={24} />
+                    <button onClick={() => setView(true)} className="relative overflow-hidden flex gap-2 py-4 items-center px-6 bg-(--light-fg)/25 backdrop-blur-[2px] border-2 border-white/50 dark:border-black/50 dark:bg-(--dark-fg)/25 hover:bg-(--light-fg)/40 hover:dark:bg-(--dark-fg)/40 rounded-md group">
+                        <SiReaddotcv size={24} className="group-hover:-rotate-z-50 transition-transform duration-300" />
                         See My CV
+                        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
+                            translate-x-[-100%] group-hover:translate-x-[100%] 
+                            transition-transform duration-300 ease-in-out"></span>
                     </button>
                     <button className="py-4 px-6 rounded-md flex gap-2 items-center">
                         See My Work
@@ -108,12 +113,11 @@ export default function Hero()
                     ))}
                 </div>
             </div>
-            <div className="absolute flex items-center flex-col gap-1 justify-center bottom-0 -translate-y-10">
+            <div className="absolute flex items-center flex-col gap-1 justify-center bottom-0 -translate-y-10 animate-bounce">
                 SCROLL
-                <div className="h-10 w-[1px] bg-(--light-fg) dark:bg-(--dark-fg)">
-                    
-                </div>
+                <div className="h-10 w-[1px] bg-(--light-fg) dark:bg-(--dark-fg)"/>
             </div>
+            {view && <Viewer setView={setView} /> }
         </div>
     )
 }
