@@ -5,16 +5,15 @@ import { personalProjects } from "../utils/data";
 export default function Showcase()
 {
     return (
-        <>
+        <div className="flex items-center justify-center">
             <div className="flex flex-col gap-4 text-black dark:text-white">
                 <div className="group flex justify-between items-center pr-4">
-                    <h1 className="font-bold text-2xl">Favorite Projects</h1>
-                    <a href="https://github.com/nrkahfirhmd" target="_blank" className="flex items-center gap-2 cursor-pointer hover:underline">
+                    <h1 className="font-bold text-2xl text-green-500 dark:text-green-200 ">Favorite Projects</h1>
+                    <a href="https://github.com/nrkahfirhmd" target="_blank" className="text-(--dark-bg) bg-green-500 dark:bg-green-200 py-2 px-4 rounded lg flex items-center gap-2 cursor-pointer hover:underline">
                         Show All
-                        <FaHandPointRight className="group-hover:w-6 group-hover:h-6 transition-all duration-300" />
                     </a>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid gap-4 place-items-center">
                     { personalProjects.map((data, index) => (
                         <Projects
                             key={index}
@@ -27,6 +26,6 @@ export default function Showcase()
                     )) }
                 </div>
             </div>
-        </>
+        </div>
     )
 }

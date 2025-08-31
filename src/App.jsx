@@ -12,8 +12,8 @@ export default function App()
                 <Hero/>
                 <About/>
                 {/* <Experiences />
-                <Skills/>
-                <Showcase/> */}
+                <Skills/> */}
+                <Showcase/> 
             </div>
         </>
     )
