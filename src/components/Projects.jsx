@@ -1,33 +1,51 @@
-import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import ProjectsDetail from "./ProjectsDetail";
 
 export default function Projects({ screenshot, name, desc, skills, sources })
 {
+    const [active, setActive] = useState(false);
+
+    const toggleActive = () => {
+        setActive(!active);
+    };
+    
     return (
-        <div className="group flex w-full h-100 rounded-lg overflow-hidden max-w-6xl">
-            <div className="w-full p-4 flex flex-col gap-4 items-between">
+        <div className="px-4 group flex w-full items-center justify-center rounded-lg max-w-6xl relative">
+            <div className="w-full p-4 md:flex flex-col gap-4 hidden items-between">
                 <h2 className="text-5xl font-bold">{name}</h2>
                 <p className="text-sm">{desc}</p>
-                <div className="flex gap-1 flex-wrap">
-                    { skills.map((data, index) => (
-                        <div key={index} className="text-sm flex gap-1 items-center py-2 px-3 border border-black dark:border-white w-fit rounded-full">
-                            {data}
-                        </div>
-                    )) }
-                </div>
-
-                <div className="flex gap-2">
-                    { sources.map((data, index) => (
-                        <a href={data.link} target="_blank" key={index} className="text-sm flex gap-1 items-center py-2 px-3 bg-black dark:bg-white w-fit rounded-full cursor-pointer text-white dark:text-black">
-                            {data.icon}
-                            {data.label}
-                        </a>
-                    ))}
+                <div>
+                    <button onClick={() => setActive(true)} className="py-2 px-4 rounded-lg border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200">
+                        Show More
+                    </button>
                 </div>
             </div>
 
-            <div className="w-full shadow-sm flex justify-center overflow-hidden rounded-lg">
-                <img src={screenshot} alt="Showcase" className="w-full h-full object-cover shadow-lg transition-all duration-300" />
+            <div onClick={toggleActive} className="relative w-full shadow-sm flex justify-center items-center overflow-hidden rounded-lg group">
+                <h1 className={`absolute z-2 text-3xl font-bold
+                        ${active ? "block" : "hidden group-hover:block"}
+                    `}>
+                    {name}
+                </h1>
+                <div className={`absolute w-full h-full z-1 bg-black/50
+                        ${active ? "block" : "hidden group-hover:block"}
+                    `} />
+                <img src={screenshot} alt="Showcase" 
+                    className={`w-full h-full object-cover shadow-lg transition-all duration-300 
+                        ${active ? "scale-110 blur-sm" : "group-hover:scale-110 group-hover:blur-sm"}
+                    `} />
             </div>
+
+            {active && (
+                <ProjectsDetail 
+                    screenshot={screenshot}
+                    name={name}
+                    desc={desc}
+                    skills={skills}
+                    sources={sources}
+                    setActive={setActive}
+                />
+            ) }
         </div>
     )
 }

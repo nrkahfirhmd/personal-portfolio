@@ -83,14 +83,14 @@ export default function Hero()
                     I blend Artificial Intelligence and Software Engineering to build smart, scalable, and transformative products.
                 </div>
                 <div className="flex gap-2">
-                    <button onClick={() => setView(true)} className="relative overflow-hidden flex gap-2 py-4 items-center px-6 bg-(--light-fg)/25 backdrop-blur-[2px] border-2 border-white/50 dark:border-black/50 dark:bg-(--dark-fg)/25 hover:bg-(--light-fg)/40 hover:dark:bg-(--dark-fg)/40 rounded-md group">
+                    <button onClick={() => setView(true)} className="relative overflow-hidden flex gap-1 md:gap-2 py-4 items-center px-4 md:px-6 bg-(--light-fg)/25 backdrop-blur-[2px] border-2 border-white/50 dark:border-black/50 dark:bg-(--dark-fg)/25 hover:bg-(--light-fg)/40 hover:dark:bg-(--dark-fg)/40 rounded-md group">
                         <SiReaddotcv size={24} className="group-hover:-rotate-z-50 transition-transform duration-300" />
                         See My CV
                         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
                             translate-x-[-100%] group-hover:translate-x-[100%] 
                             transition-transform duration-300 ease-in-out"></span>
                     </button>
-                    <button className="py-4 px-6 rounded-md flex gap-2 items-center">
+                    <button className="py-4 px-4 md:px-6 rounded-md flex gap-1 md:gap-2 items-center">
                         See My Work
                         <FaAngleRight size={24} />
                     </button>

@@ -10,10 +10,10 @@ export default function About() {
 
             <div className="flex flex-col md:flex-row gap-6 md:max-w-4xl">
                 <div className="flex flex-col gap-4 md:w-1/2">
-                    <h1 className="flex flex-col text-5xl font-bold">
+                    <div className="flex flex-col text-5xl font-bold">
                         <h1>Hi, I'm</h1>
                         <h1 className="text-green-500 dark:text-green-200">Kahfi</h1>
-                    </h1>
+                    </div>
                     <div className="flex flex-col gap-2">
                         <span className="flex gap-2 items-center">
                             <IoLocationSharp size={24} className="text-green-500 dark:text-green-200" />
