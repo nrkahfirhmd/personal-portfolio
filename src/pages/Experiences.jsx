@@ -7,7 +7,7 @@ export default function Experiences()
     const [selected, setSelected] = useState(0);
 
     return (
-        <div className="flex justify-center items-center min-h-screen">
+        <div className="flex justify-center py-4">
             <div className="flex flex-col gap-4 w-5xl px-4">
                 <h1 className="font-bold text-2xl text-center text-green-500 dark:text-green-200">My Experiences</h1>
                 <div className="flex rounded-md overflow-hidden cursor-pointer p-1 border">

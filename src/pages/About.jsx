@@ -2,6 +2,7 @@ import { FaCodeMerge } from "react-icons/fa6";
 import { GrFormNext } from "react-icons/gr";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineDateRange } from "react-icons/md";
+import { myServices, personalSkills, personalStatistics } from "../utils/data";
 
 export default function About() {
     return (
@@ -21,7 +22,7 @@ export default function About() {
                         </span>
                         <span className="flex gap-2 items-center">
                             <FaCodeMerge size={24} className="text-green-500 dark:text-green-200" />
-                            AI Engineer
+                            ML Engineer & Software Engineer
                         </span>
                         <span className="flex gap-2 items-center">
                             <MdOutlineDateRange size={24} className="text-green-500 dark:text-green-200" />
@@ -29,13 +30,13 @@ export default function About() {
                         </span>
                     </div>
                     <div className="text-justify">
-                        As a dedicated developer based in the heart of Bavaria, I bring German precision and creative innovation to every project. I specialize in creating robust, scalable web applications that combine cutting-edge technology with intuitive user experiences.
+                        As a passionate developer and machine learning engineer based in Bogor, Indonesia, I bring a strong mix of analytical thinking and problem-solving skills to every project. With hands-on experience in Python, TensorFlow, PyTorch, and modern frameworks like React and Next.js, I focus on building intelligent, data-driven applications that deliver real impact. My work spans software development, AI-driven products, data analysis, and automation — turning ideas into scalable and efficient solutions.
                     </div>
                     <div className="flex gap-2">
-                        <button className="p-4 bg-green-500 dark:bg-green-200 text-white dark:text-(--dark-bg) rounded-lg">
+                        <button className="hoverable hover:dark:bg-green-200/80 hover:bg-green-500/50 p-4 bg-green-500 dark:bg-green-200 text-white dark:text-(--dark-bg) rounded-lg">
                             Get In Touch
                         </button>
-                        <button className="p-4 border text-green-500 dark:text-green-200 border-green-500 dark:border-green-200 rounded-lg">
+                        <button id="toProjects4" className="hoverable p-4 border text-green-500 dark:text-green-200 border-green-500 dark:border-green-200 hover:text-green-500/50 hover:dark:text-green-200/80 hover:border-green-500/50 hover:dark:border-green-200/80 rounded-lg">
                             View Projects
                         </button>
                     </div>
@@ -45,50 +46,32 @@ export default function About() {
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl text-green-500 dark:text-green-200">Key Skills</h1>
                         <div className="flex gap-2 flex-wrap">
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
-                            <span className="py-2 px-4 border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200 rounded-full">React</span>
+                            {personalSkills.map((data, i) => (
+                                <span key={i} className="text-xs py-2 px-4 border border-green-500 dark:border-green-200 hover:scale-110 transition-transform hover:rotate-5 text-green-500 dark:text-green-200 rounded-full">{data}</span>
+                            ))}
                         </div>
                     </div>
                     <div>
                         <h1 className="text-2xl text-green-500 dark:text-green-200">Services</h1>
-                        <div className="flex flex-col gap-2">
-                            <span className="flex gap-2 items-center">
-                                <GrFormNext size={24} className="text-green-500 dark:text-green-200" />
-                                Automation Engineer
-                            </span>
+                        <div className="flex flex-col gap-2 py-2">
+                            {myServices.map((data, i) => (
+                                <span key={i} className="flex gap-2 items-center">
+                                    <GrFormNext size={24} className="text-green-500 dark:text-green-200" />
+                                    {data}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="flex flex-wrap gap-4 items-center justify-center">
-                <div className="border rounded-lg dark:border-green-200 border-green-500 p-6 flex flex-col gap-1"> 
-                    <h1 className="text-3xl dark:text-green-200 text-green-500">Junior</h1>
-                    <h3 className="text-xs">Professional Level</h3>
-                </div>
-                <div className="border rounded-lg dark:border-green-200 border-green-500 p-6 flex flex-col gap-1"> 
-                    <h1 className="text-3xl dark:text-green-200 text-green-500">10+</h1>
-                    <h3 className="text-xs">Projects Completed</h3>
-                </div>
-                <div className="border rounded-lg dark:border-green-200 border-green-500 p-6 flex flex-col gap-1"> 
-                    <h1 className="text-3xl dark:text-green-200 text-green-500">Junior</h1>
-                    <h3 className="text-xs">Professional Level</h3>
-                </div>
-                <div className="border rounded-lg dark:border-green-200 border-green-500 p-6 flex flex-col gap-1"> 
-                    <h1 className="text-3xl dark:text-green-200 text-green-500">Junior</h1>
-                    <h3 className="text-xs">Professional Level</h3>
-                </div>
-                <div className="border rounded-lg dark:border-green-200 border-green-500 p-6 flex flex-col gap-1"> 
-                    <h1 className="text-3xl dark:text-green-200 text-green-500">Junior</h1>
-                    <h3 className="text-xs">Professional Level</h3>
-                </div>
+                {personalStatistics.map((data, i) => (
+                    <div key={i} className="hover:scale-110 transition-all duration-300 border rounded-lg dark:border-green-200 border-green-500 hover:dark:text-green-200 hover:text-green-500 p-6 flex flex-col gap-1"> 
+                        <h1 className="text-3xl">{data.number}</h1>
+                        <h3 className="text-xs">{data.desc}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )

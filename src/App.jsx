@@ -32,6 +32,7 @@ export default function App()
         document.querySelector('#toProjects').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
         document.querySelector('#toProjects2').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
         document.querySelector('#toProjects3').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
+        document.querySelector('#toProjects4').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
 
         return () => {
             if (rafId.current) cancelAnimationFrame(rafId.current)

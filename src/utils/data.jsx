@@ -9,29 +9,37 @@ export const githubLink = "https://github.com/nrkahfirhmd"
 export const linkedinLink = "https://www.linkedin.com/in/nrkahfirhmd/"
 export const mediumLink = "https://medium.com/@nrkahfirhmd"
 
-// export const personalStatistics = [
-//     { number: 6, desc: "Projects Completed" },
-//     { number: 10, desc: "Datasets Analyzed" },
-//     { number: 3, desc: "ML Models Deployed" },
-//     { number: 2, desc: "Dashboards Built" }
-// ]
-
-export const techStack = [
-    { icon: <FaGit/>, label: "Git" },
-    { icon: <FaPython/>, label: "Python" },
-    { icon: <SiTensorflow/>, label: "Tensorflow" },
-    { icon: <SiPytorch/>, label: "Pytorch" },
-    { icon: <FaRProject/>, label: "R" },
-    { icon: <BsFillBarChartFill />, label: "Power BI" },
-    { icon: <IoLogoTableau />, label: "Tableau" },
-    { icon: <SiMysql />, label: "MySQL" },
-    { icon: <FaReact />, label: "React" },
-    { icon: <SiNextdotjs/>, label: "Next.js" },
-    { icon: <SiExpress/>, label: "Express.js" },
-    { icon: <FaLaravel/>, label: "Laravel" },
-    { icon: <SiCodeigniter/>, label: "Code Igniter" },
-    { icon: <FaUnity/>, label: "Unity" },
+export const personalStatistics = [
+    { number: "Junior", desc: "Professional Level" },
+    { number: "5+", desc: "Projects Completed" },
+    { number: "10+", desc: "Datasets Analyzed" },
 ]
+
+export const personalSkills = [
+    "Git", "Python", "Tensorflow", "Pytorch", "Power BI", "MySQL", "PostgreSQL", "React", "Next.js",
+    "Express.js", "Laravel", "CodeIgniter", "Unity"
+]
+
+export const myServices = [
+    "Software Development", "AI-Driven Products", "Data Analysis", "Automation & Scripting"
+]
+
+// export const techStack = [
+//     { icon: <FaGit/>, label: "Git" },
+//     { icon: <FaPython/>, label: "Python" },
+//     { icon: <SiTensorflow/>, label: "Tensorflow" },
+//     { icon: <SiPytorch/>, label: "Pytorch" },
+//     { icon: <FaRProject/>, label: "R" },
+//     { icon: <BsFillBarChartFill />, label: "Power BI" },
+//     { icon: <IoLogoTableau />, label: "Tableau" },
+//     { icon: <SiMysql />, label: "MySQL" },
+//     { icon: <FaReact />, label: "React" },
+//     { icon: <SiNextdotjs/>, label: "Next.js" },
+//     { icon: <SiExpress/>, label: "Express.js" },
+//     { icon: <FaLaravel/>, label: "Laravel" },
+//     { icon: <SiCodeigniter/>, label: "Code Igniter" },
+//     { icon: <FaUnity/>, label: "Unity" },
+// ]
 
 export const personalEducation = [
     {
