@@ -1,9 +1,12 @@
 import { FaGithub } from "react-icons/fa";
 import { FaArrowRightLong, FaLinkedin, FaMedium } from "react-icons/fa6";
 import { githubLink, linkedinLink, mediumLink } from "../utils/data";
+import { useContact } from "../context/contactContext";
 
 export default function Footer()
 {
+    const { setViewContact } = useContact();
+
     return (
         <div className="pt-12 px-4 md:px-20">
             <div className="w-full rounded-md p-2 border-1 border-(--light-fg)/25 dark:border-(--dark-fg)/25 gap-8 md:gap-4 flex flex-col overflow-hidden">
@@ -22,8 +25,8 @@ export default function Footer()
                             <div id="toAbout3" className="hoverable hover:text-green-500 hover:dark:text-green-200 transition-color duration-300">
                                 About Me
                             </div>
-                            <div className="hoverable hover:text-green-500 hover:dark:text-green-200 transition-color duration-300">
-                                Contact
+                            <div id="toExperiences" className="hoverable hover:text-green-500 hover:dark:text-green-200 transition-color duration-300">
+                                Experiences
                             </div>
                         </div>
                     </div>
@@ -50,7 +53,7 @@ export default function Footer()
                                 <h1 className="font-bold">Contact Me</h1>
                                 <h2 className="text-xs">Say Hello!</h2>
                             </div>
-                            <div className="hoverable border border-2 border-grey p-2 rounded-full hover:text-green-500 hover:dark:text-green-200">
+                            <div onClick={() => setViewContact(true)} className="hoverable border border-2 border-grey p-2 rounded-full hover:text-green-500 hover:dark:text-green-200">
                                 <FaArrowRightLong className="size-4 md:size-6"/>
                             </div>
                         </div>

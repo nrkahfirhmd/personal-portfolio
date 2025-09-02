@@ -4,11 +4,14 @@ import Experiences from "./pages/Experiences"
 import About from "./pages/About"
 import { useEffect, useRef } from "react"
 import Lenis from "@studio-freight/lenis"
+import { useContact } from "./context/contactContext"
+import Contacts from "./components/Contacts"
 
 export default function App()
 {
     const lenisRef = useRef()
     const rafId = useRef()
+    const { viewContact, setViewContact } = useContact()
 
     useEffect(() => {
         lenisRef.current = new Lenis({
@@ -28,6 +31,8 @@ export default function App()
         document.querySelector('#toAbout').addEventListener('click', () => { lenisRef.current.scrollTo('#about') }) 
         document.querySelector('#toAbout2').addEventListener('click', () => { lenisRef.current.scrollTo('#about') }) 
         document.querySelector('#toAbout3').addEventListener('click', () => { lenisRef.current.scrollTo('#about') }) 
+
+        document.querySelector('#toExperiences').addEventListener('click', () => { lenisRef.current.scrollTo('#experiences') }) 
         
         document.querySelector('#toProjects').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
         document.querySelector('#toProjects2').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
@@ -48,6 +53,8 @@ export default function App()
                 <About/>
                 <Experiences />
                 <Showcase/> 
+                
+                {viewContact && <Contacts setView={setViewContact} />}
             </div>
         </>
     )
