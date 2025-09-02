@@ -27,7 +27,7 @@ export default function Projects({ screenshot, name, desc, skills, sources })
                     `}>
                     {name}
                 </h1>
-                <div className={`absolute w-full h-full z-1 bg-black/50
+                <div className={`absolute w-full h-full z-1 bg-white/50 dark:bg-black/50
                         ${active ? "block" : "hidden group-hover:block"}
                     `} />
                 <img src={screenshot} alt="Showcase" 
