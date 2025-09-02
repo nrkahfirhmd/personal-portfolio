@@ -5,6 +5,9 @@ import { IoLogoTableau } from "react-icons/io5"
 import { SiCodeigniter, SiExpress, SiMysql, SiNextdotjs, SiPytorch, SiStreamlit, SiTensorflow } from "react-icons/si"
 
 export const CVLink = "https://drive.google.com/file/d/1HXmg55788wwLjkgeVSbsvLMDU1kLGiRw/preview"
+export const githubLink = "https://github.com/nrkahfirhmd"
+export const linkedinLink = "https://www.linkedin.com/in/nrkahfirhmd/"
+export const mediumLink = "https://medium.com/@nrkahfirhmd"
 
 // export const personalStatistics = [
 //     { number: 6, desc: "Projects Completed" },

@@ -23,12 +23,15 @@ export default function App()
         rafId.current = requestAnimationFrame(raf)
 
         document.querySelector('#toHero').addEventListener('click', () => { lenisRef.current.scrollTo('#hero') }) 
+        document.querySelector('#toHero2').addEventListener('click', () => { lenisRef.current.scrollTo('#hero') }) 
 
         document.querySelector('#toAbout').addEventListener('click', () => { lenisRef.current.scrollTo('#about') }) 
         document.querySelector('#toAbout2').addEventListener('click', () => { lenisRef.current.scrollTo('#about') }) 
+        document.querySelector('#toAbout3').addEventListener('click', () => { lenisRef.current.scrollTo('#about') }) 
         
         document.querySelector('#toProjects').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
         document.querySelector('#toProjects2').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
+        document.querySelector('#toProjects3').addEventListener('click', () => { lenisRef.current.scrollTo('#projects') })
 
         return () => {
             if (rafId.current) cancelAnimationFrame(rafId.current)
