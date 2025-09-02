@@ -1,11 +1,10 @@
-import { FaHandPointRight } from "react-icons/fa";
 import Projects from "../components/Projects";
 import { personalProjects } from "../utils/data";
 
 export default function Showcase()
 {
     return (
-        <div className="flex items-center justify-center">
+        <div id="projects" className="flex min-h-screen items-center justify-center">
             <div className="flex flex-col gap-4">
                 <div className="group flex justify-between items-center px-4">
                     <h1 className="font-bold text-xl md:text-2xl text-green-500 dark:text-green-200 ">Favorite Projects</h1>

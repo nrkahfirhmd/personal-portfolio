@@ -9,8 +9,8 @@ export default function Cursor()
     let [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
-    let cursorVisible = useState(false);
-    let cursorEnlarged = useState(false);
+    let cursorVisible = useRef(false);
+    let cursorEnlarged = useRef(false);
 
     const onMouseMove = event => {
         const { clientX: x, clientY: y } = event;
@@ -72,31 +72,32 @@ export default function Cursor()
         endX = e.clientX;
         endY = e.clientY;
         cursorDot.current.style.top = endY + "px";
-        cursorDot.current.style.left = endX + "px";
+        cursorDot.current.style.left = endX + "px"; 
+        toggleCursorSize();
     }
 
     function toggleCursorVisibility() {
         if (cursorVisible.current) {
-        cursorDot.current.style.opacity = 1;
-        cursorDotOutline.current.style.opacity = 1;
+            cursorDot.current.style.opacity = 1;
+            cursorDotOutline.current.style.opacity = 1;
         } else {
-        cursorDot.current.style.opacity = 0;
-        cursorDotOutline.current.style.opacity = 0;
+            cursorDot.current.style.opacity = 0;
+            cursorDotOutline.current.style.opacity = 0;
         }
     }
 
     function toggleCursorSize() {
         if (cursorEnlarged.current) {
-        cursorDot.current.style.transform = "translate(-50%, -50%) scale(0.7)";
-        cursorDotOutline.current.style.transform = "translate(-50%, -50%) scale(1)";
+            cursorDot.current.style.transform = "translate(-50%, -50%) scale(0.7)";
+            cursorDotOutline.current.style.transform = "translate(-50%, -50%) scale(1.5)";
         } else {
-        cursorDot.current.style.transform = "translate(-50%, -50%) scale(1)";
-        cursorDotOutline.current.style.transform = "translate(-50%, -50%) scale(1)";
+            cursorDot.current.style.transform = "translate(-50%, -50%) scale(1)";
+            cursorDotOutline.current.style.transform = "translate(-50%, -50%) scale(1)";
         }
     }
 
     function handleLinks() {
-        document.querySelectorAll("a").forEach(el => {
+        document.querySelectorAll(".hoverable").forEach(el => {
             el.addEventListener("mouseover", () => {
                 cursorEnlarged.current = true;
                 toggleCursorSize();
@@ -114,8 +115,6 @@ export default function Cursor()
             y += (endY - y) / 8;
             cursorDotOutline.current.style.top = y + "px";
             cursorDotOutline.current.style.left = x + "px";
-            cursorDotOutline.current.style.transform = "translate(-50%, -50%)";
-            cursorDot.current.style.transform = "translate(-50%, -50%)";
         }
         previousTimeRef.current = time;
         requestRef.current = requestAnimationFrame(animateDotOutline);

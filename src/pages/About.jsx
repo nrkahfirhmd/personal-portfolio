@@ -5,7 +5,7 @@ import { MdOutlineDateRange } from "react-icons/md";
 
 export default function About() {
     return (
-        <div className="px-4 md:px-20 flex flex-col gap-8 md:items-center" >
+        <div id="about" className="min-h-screen justify-center px-4 md:px-20 flex flex-col gap-8 md:items-center" >
             <h1 className="text-sm">About Me</h1>
 
             <div className="flex flex-col md:flex-row gap-6 md:max-w-4xl">

@@ -7,6 +7,10 @@ body * {
   cursor: none;
 }
 
+html {
+  overflow: hidden;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -46,6 +50,8 @@ body {
 
 @theme {
   --animate-pop: pop 300ms ease-in-out;
+  --animate-whoosh: whoosh 1s ease-in-out infinite;
+  --animate-spinz: spinz 450ms ease-in;
 
   @keyframes pop {
     0% {
@@ -53,25 +59,36 @@ body {
     }
 
     50% {
-      transform: scale(1.1)
+      transform: scale(1.1);
     }
 
     100% {
       transform: scale(1);
     }
   }
-}
 
-@keyframes swoosh {
-  0% {
-    left: -100%;
+  @keyframes spinz {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    60% {
+      transform: rotateZ(-360deg); 
+    }
+    80% {
+      transform: rotateZ(-400deg); 
+    }
+    100% {
+      transform: rotateZ(-360deg); 
+    }
   }
 
-  50% {
-    left: 50%;
-  }
+  @keyframes whoosh {
+    0% {
+      transform: translateX(-100%);
+    }
 
-  100% {
-    left: 120%;
+    100% {
+      transform: translateX(100%);
+    }
   }
 }

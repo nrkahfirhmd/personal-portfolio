@@ -30,28 +30,29 @@ export default function Hero()
         cursorVisible.current = false;
         toggleCursorVisibility();
     };
+    const onResize = event => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    };
 
     useEffect(() => {
         const hero = heroRef.current;
         hero?.addEventListener("mousemove", onMouseMove);
         document.addEventListener("mouseenter", onMouseEnter);
         document.addEventListener("mouseleave", onMouseLeave);
+        document.addEventListener("resize", onResize);
         
         return () => {
             hero?.removeEventListener("mousemove", onMouseMove);
             document.removeEventListener("mouseenter", onMouseEnter);
             document.removeEventListener("mouseleave", onMouseLeave);
+            document.removeEventListener("resize", onResize);
         };
     }, []);
 
     function positionDot(e) {
         cursorVisible.current = true;
         toggleCursorVisibility();
-
-        endX = e.clientX;
-        endY = e.clientY;
-        cursorMask.current.style.top = endY + "px";
-        cursorMask.current.style.left = endX + "px";
     }
 
     function toggleCursorVisibility() {
@@ -63,10 +64,10 @@ export default function Hero()
     }
 
     return (
-        <div className="relative min-h-screen grid place-items-center px-2" ref={heroRef}>
+        <div id="hero" className="relative min-h-screen grid place-items-center px-4" ref={heroRef}>
             <div className="absolute inset-0 bg-grid md:hidden"></div>
             <div
-                className="absolute inset-0 bg-grid hidden md:block"
+                className="absolute inset-0 bg-grid hidden opacity-0 md:block"
                 ref={cursorMask}
                 style={{
                     maskImage: `radial-gradient(200px at ${pos.x}px ${pos.y}px, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)`,
@@ -83,16 +84,15 @@ export default function Hero()
                     I blend Artificial Intelligence and Software Engineering to build smart, scalable, and transformative products.
                 </div>
                 <div className="flex gap-2">
-                    <button onClick={() => setView(true)} className="relative overflow-hidden flex gap-1 md:gap-2 py-4 items-center px-4 md:px-6 bg-(--light-fg)/25 backdrop-blur-[2px] border-2 border-white/50 dark:border-black/50 dark:bg-(--dark-fg)/25 hover:bg-(--light-fg)/40 hover:dark:bg-(--dark-fg)/40 rounded-md group">
+                    <button onClick={() => setView(true)} className="relative overflow-hidden hoverable outline-none flex gap-1 md:gap-2 py-4 items-center px-4 md:px-6 bg-(--light-fg)/25 backdrop-blur-[2px] border-2 border-white/50 dark:border-black/50 dark:bg-(--dark-fg)/25 hover:bg-(--light-fg)/40 hover:dark:bg-(--dark-fg)/40 rounded-md group">
                         <SiReaddotcv size={24} className="group-hover:-rotate-z-50 transition-transform duration-300" />
                         See My CV
                         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
-                            translate-x-[-100%] group-hover:translate-x-[100%] 
-                            transition-transform duration-300 ease-in-out"></span>
+                            animate-whoosh"></span>
                     </button>
-                    <button className="py-4 px-4 md:px-6 rounded-md flex gap-1 md:gap-2 items-center">
+                    <button id="toProjects2" className="hoverable group py-4 px-4 md:px-6 rounded-md hover:text-green-500 hover:dark:text-green-200 transition-color duration-300 flex gap-1 md:gap-2 items-center">
                         See My Work
-                        <FaAngleRight size={24} />
+                        <FaAngleRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />
                     </button>
                 </div>
                 <div className="flex">
@@ -113,7 +113,7 @@ export default function Hero()
                     ))}
                 </div>
             </div>
-            <div className="absolute flex items-center flex-col gap-1 justify-center bottom-0 -translate-y-10 animate-bounce">
+            <div id="toAbout2" className="hoverable absolute flex items-center flex-col gap-1 justify-center bottom-0 -translate-y-2 md:-translate-y-10 animate-bounce">
                 SCROLL
                 <div className="h-10 w-[1px] bg-(--light-fg) dark:bg-(--dark-fg)"/>
             </div>
