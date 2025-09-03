@@ -1,6 +1,6 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
-export default function ProjectsDetail({ screenshot, name, desc, skills, sources, setActive })
+export default function ProjectsDetail({ screenshot, name, role, desc, skills, sources, setActive })
 {
     return (
         <div onClick={() => setActive(false)} className="top-0 left-0 h-screen w-screen fixed flex flex-col gap-4 justify-center items-center z-10 px-2 backdrop-blur-md">
@@ -9,7 +9,10 @@ export default function ProjectsDetail({ screenshot, name, desc, skills, sources
                     <img src={screenshot} alt="Showcase" />
                 </div>
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-2xl md:text-4xl font-bold text-green-500 dark:text-green-200">{name}</h1>
+                    <div className="flex flex-col gap-2">
+                        <h1 className="text-2xl md:text-4xl font-bold text-green-500 dark:text-green-200">{name}</h1>
+                        <h1 className="text-xs md:text-sm font-bold">{role}</h1>
+                    </div>
                     <p className="text-xs md:text-sm">{desc}</p>
                     <div className="flex gap-1 flex-wrap">
                         { skills.map((data, index) => (

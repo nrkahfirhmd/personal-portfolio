@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectsDetail from "./ProjectsDetail";
 
-export default function Projects({ screenshot, name, desc, skills, sources })
+export default function Projects({ screenshot, name, role, desc, skills, sources })
 {
     const [active, setActive] = useState(false);
 
@@ -12,10 +12,13 @@ export default function Projects({ screenshot, name, desc, skills, sources })
     return (
         <div className="px-4 group flex w-full items-center justify-center rounded-lg max-w-6xl relative">
             <div className="w-full p-4 md:flex flex-col gap-4 hidden items-between">
-                <h2 className="text-5xl font-bold">{name}</h2>
+                <div className="flex flex-col gap-2">
+                    <h2 className="text-5xl font-bold">{name}</h2>
+                    <p className="text-sm font-bold">{role}</p>
+                </div>
                 <p className="text-sm">{desc}</p>
                 <div>
-                    <button onClick={() => setActive(true)} className="py-2 px-4 rounded-lg border border-green-500 dark:border-green-200 text-green-500 dark:text-green-200">
+                    <button onClick={() => setActive(true)} className="hoverable py-2 px-4 rounded-lg border border-green-500 dark:border-green-200 hover:bg-green-500 hover:dark:bg-green-200 hover:text-(--light-bg) hover:dark:text-(--dark-bg) text-green-500 dark:text-green-200">
                         Show More
                     </button>
                 </div>
@@ -40,6 +43,7 @@ export default function Projects({ screenshot, name, desc, skills, sources })
                 <ProjectsDetail 
                     screenshot={screenshot}
                     name={name}
+                    role={role}
                     desc={desc}
                     skills={skills}
                     sources={sources}

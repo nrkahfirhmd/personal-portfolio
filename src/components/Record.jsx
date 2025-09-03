@@ -1,4 +1,4 @@
-export default function Record({logo, duration, company, position, desc})
+export default function Record({logo, duration, company, position, headline, desc})
 {
     return (
         <div className="flex gap-4 md:px-8">
@@ -18,7 +18,12 @@ export default function Record({logo, duration, company, position, desc})
                 </div>
                 
                 <div className="pl-4 md:pl-0">    
-                    <ol className="text-justify text-sm font-bold p-4 bg-green-500 dark:bg-green-200 rounded-lg text-(--light-bg) dark:text-(--dark-bg)">
+                    <ol className="text-justify text-xs md:text-sm font-bold p-4 bg-green-500 dark:bg-green-200 rounded-lg text-(--light-bg) dark:text-(--dark-bg) flex flex-col gap-2">
+                        { headline ? (
+                            <li>
+                                { headline }
+                            </li>
+                        ) : "" }
                         {desc.map((data, index) => (
                             <li key={index} className="flex gap-2">
                                 <span className="h-full">•</span>

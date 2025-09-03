@@ -16,6 +16,7 @@ export default function Education()
                             duration={data.duration}
                             company={data.company}
                             position={data.position}
+                            headline={data.headline}
                             desc={data.desc}
                         />
                     ))}

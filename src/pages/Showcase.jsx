@@ -18,6 +18,7 @@ export default function Showcase()
                             key={index}
                             screenshot={data.screenshot}
                             name={data.name}
+                            role={data.role}
                             desc={data.desc}
                             skills={data.skills}
                             sources={data.sources}

@@ -16,6 +16,7 @@ export default function Works()
                             duration={data.duration}
                             company={data.company}
                             position={data.position}
+                            headline={data.headline}
                             desc={data.desc}
                         />
                     ))}

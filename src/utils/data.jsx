@@ -1,8 +1,6 @@
-import { BsFillBarChartFill } from "react-icons/bs"
 import { CgWebsite } from "react-icons/cg"
-import { FaDatabase, FaGit, FaGithub, FaJs, FaLaravel, FaPython, FaReact, FaRProject, FaUnity } from "react-icons/fa"
-import { IoLogoTableau } from "react-icons/io5"
-import { SiCodeigniter, SiExpress, SiMysql, SiNextdotjs, SiPytorch, SiStreamlit, SiTensorflow } from "react-icons/si"
+import { FaGithub, FaWhatsapp } from "react-icons/fa"
+import { SiStreamlit } from "react-icons/si"
 
 export const CVLink = "https://drive.google.com/file/d/1HXmg55788wwLjkgeVSbsvLMDU1kLGiRw/preview"
 export const githubLink = "https://github.com/nrkahfirhmd"
@@ -24,100 +22,143 @@ export const myServices = [
     "Software Development", "AI-Driven Products", "Data Analysis", "Automation & Scripting"
 ]
 
-// export const techStack = [
-//     { icon: <FaGit/>, label: "Git" },
-//     { icon: <FaPython/>, label: "Python" },
-//     { icon: <SiTensorflow/>, label: "Tensorflow" },
-//     { icon: <SiPytorch/>, label: "Pytorch" },
-//     { icon: <FaRProject/>, label: "R" },
-//     { icon: <BsFillBarChartFill />, label: "Power BI" },
-//     { icon: <IoLogoTableau />, label: "Tableau" },
-//     { icon: <SiMysql />, label: "MySQL" },
-//     { icon: <FaReact />, label: "React" },
-//     { icon: <SiNextdotjs/>, label: "Next.js" },
-//     { icon: <SiExpress/>, label: "Express.js" },
-//     { icon: <FaLaravel/>, label: "Laravel" },
-//     { icon: <SiCodeigniter/>, label: "Code Igniter" },
-//     { icon: <FaUnity/>, label: "Unity" },
-// ]
-
 export const personalEducation = [
     {
         logo: "/logo/unpad.png",
         duration: "Aug 2022 - Present",
         company: "Padjadjaran University",
         position: "Computer Science Undergrad",
+        headline: "GPA: 3.90 / 4.00. During my studies at Universitas Padjadjaran, I strived to maximize every opportunity to develop both my hard skills in programming and my soft skills in social interaction. Below are the academic projects I have completed:",
         desc: [
-            "GPA: 3.89 / 4.00"
+            "Personal Finance Management Program (Data Structures – 2nd Semester). Tech Stack: C++ (Linked List, Queue, Stack)",
+            "Laundry Business CRUD Website (Database Systems I – 2nd Semester). Tech Stack: PHP",
+            "Haze: A Steam Clone (Web Programming – 3rd Semester). Tech Stack: CodeIgniter4",
+            "Drugmacy: Pharmacy Management Application (Object-Oriented Programming – 3rd Semester). Tech Stack: Java",
+            "Stock Price Prediction (Artificial Intelligence – 4th Semester). Tech Stack: Python (Streamlit & Scikit-learn). Model: Linear Regression",
+            "Human Follower Robot (Robotics – 5th Semester). Tech Stack: Python (Mediapipe)",
+            "Nyisa: Reducing Food Waste (Software Development Project – 6th Semester). Tech Stack: Next.js, Express.js, Python. Model: TF-IDF",
+            "CoralScape: Coral AR Education (Human-Computer Interaction – 6th Semester). Tech Stack: C# (Unity)",
+            "Cake Shop Sales Analysis (Data Warehouse – 6th Semester). Tech Stack: Power BI",
+            "Kawi Script Dictionary (Semantic Web – 6th Semester). Tech Stack: Streamlit & RDF",
+            "Scholarship Eligibility Prediction (Soft Computing – 6th Semester). Tech Stack: Python. Model: Fuzzy C-Means"
         ]
     }
 ]
 
 export const personalWorks = [
     {
+        logo: "/logo/tunas.jpg",
+        duration: "Aug 2025 - Now",
+        company: "PT. Tunas Ridean Tbk.",
+        position: "Data Analyst & Automation Intern",
+        headline: "I am part of the Transformation Office division, responsible for streamlining repetitive tasks through data analysis and automation. Our division focuses on improving efficiency within Finance, Accounting, and Tax departments. Currently, I have been assigned to automate processes within the Tax division.",
+        desc: [
+            "I am developing a Workload Analysis for the Tax function of one of Tunas’ business units. Based on this analysis, a Gap Analysis will be conducted to assess the potential efficiency gains from automation.",
+            "As part of this initiative, we are building a Chrome Extension to extract data from the Coretax website, reducing processing time from approximately 10 minutes per task to just 10–15 seconds, achieving a 97.5% time efficiency improvement."
+        ]
+    },
+    {
         logo: "/logo/bangkit.jpg",
         duration: "Sep 2024 - Jan 2025",
         company: "Bangkit Academy",
         position: "Machine Learning Cohort",
+        headline: "Selected as one of the Machine Learning cohorts in Bangkit Academy 2024 Batch 2 out of 45,841 applicants. At Bangkit Academy, I developed not only hard skills in machine learning, but also soft skills and English proficiency, preparing cohorts for a smooth transition from academia to the workplace.",
         desc: [
             "Graduated with full graduate status and received a final average grade of 91.7",
             "100% attendance status on every agenda in Bangkit Academy",
-            "Completed 25+ courses on Machine Learning and Artificial Intelligence from Coursera and Dicoding"
+            "Completed an intensive 900+ hour curriculum learning about basics of Data Analysis, Machine Learning Algorithms & Concept, Neural Network using Tensorflow, Computer Vision, NLP, Generative AI, and LLM"
         ]
     },
     {
         logo: "/logo/unpad.png",
         duration: "Jan 2024 - Dec 2024",
         company: "Padjadjaran University",
-        position: "Laboratory Practicum Assistants",
+        position: "Teaching Assistant",
+        headline: "Assisted lecturers in the teaching and learning process, typically managing 40+ students per class throughout the semester. Responsibilities included reinforcing course materials not fully covered by the lecturer and providing consultation sessions for students. Courses taught:",
         desc: [
-            "Teaching 40+ students about web programming using HTML, CSS, JS, and PHP for 1 semester.",
-            "Teaching 40+ students about data structures using C++ for 1 semester.",
-            "Providing them with weekly assignments and materials and opening consultations on every courses."
+            "Data Structures (C++, Pointers, Linked List, Queue, Stack, Tree, Graph)",
+            "Web Programming (HTML, CSS, JavaScript, Web Servers, APIs, CodeIgniter4 Framework)",
         ]
     },
-    {
-        logo: "/logo/idx.png",
-        duration: "Jan 2024 - Feb 2024",
-        company: "Rakamin x ID/X Partners",
-        position: "Data Scientist Intern",
-        desc: [
-            "Completed the program with Qualified student status with an average final grade of 78.75",
-            "Completed 5 modules divided into 4 weeks consisting of 4 assignments and 1 final project.",
-            "Completing the final project by creating a predictive model to solve the credit risk problem on loans that are accepted or rejected."
-        ]
-    }
 ]
 
 export const personalProjects = [
     {
-        screenshot: "/thumb/nyisa.png", 
-        name: "Nyisa",
-        desc: "Build recommender system using TF-IDF and Cosine Similarity to give user food recommendations based on recent transactions.",
+        screenshot: "/thumb/himatif_apps.png",
+        name: "Himatif Apps v2",
+        role: "Project Manager & Fullstack Developer",
+        desc: "A website owned by Himatif Unpad which is intended to be the main source of information or superapps.",
         skills: [
-            "Recommendation System",
-            "TF-IDF",
-            "Cosine Similarity",
-            "Microservices API"
+            "Next.js",
+            "Express.js"
         ],
         sources: [
             { 
                 icon: <CgWebsite />, 
                 label: "Website", 
-                link: "https://nyisa.store/"
+                link: "https://apps.himatif.org"
             }
+        ]
+    },
+    {
+        screenshot: "/thumb/prabu.png",
+        name: "Prabu 2025 Website",
+        role: "Frontend Developer",
+        desc: "A website designed to help freshmen of Class of 2025 get oriented and become familiar with Universitas Padjadjaran.",
+        skills: [
+            "Next.js"
+        ],
+        sources: [
+            { 
+                icon: <CgWebsite />, 
+                label: "Website", 
+                link: "https://prabu2025.stg.unpad.ac.id"
+            }
+        ]
+    },
+    {
+        screenshot: "/thumb/sobat_warung.jpg",
+        name: "Sobat Warung",
+        role: "Backend Developer & ML Engineer",
+        desc: "A WhatsApp Bot–based solution that empowers urban micro-shops (warung) through data-driven insights.",
+        skills: [
+            "FastAPI",
+            "FP-Growth"
+        ],
+        sources: [
+            { 
+                icon: <FaWhatsapp />,
+                label: "Whatsapp", 
+                link: "http://wa.me/+14155238886?text=join%20do-tea"
+            },
+            { 
+                icon: <FaGithub/>, 
+                label: "Github", 
+                link: "https://github.com/nrkahfirhmd/aic-14"
+            }
+        ]
+    },
+    {
+        screenshot: "/thumb/grand_summit.png",
+        name: "14th Grand Summit Website",
+        role: "Project Manager",
+        desc: "A website developed as the company profile for the 14th Grand Summit, also serving as the registration platform and pitch deck submission portal for the Mini Case and Business Case competitions.",
+        skills: [
+            "Next.js",
+            "Express.js"
+        ],
+        sources: [
+            
         ]
     },
     {
         screenshot: "/thumb/agriclime.png",
         name: "AgriClime",
-        desc: "Created forecasting and classification model to predict surrounding attributes and its weather.",
+        role: "ML Engineer & Backend Developer",
+        desc: "A weather-based application designed to help Indonesian farmers manage weather uncertainty through early warnings and tailored farming recommendations.",
         skills: [
-            "Tensorflow",
-            "Service API",
-            "Data Scraping",
-            "Multi Inference",
-            "ML Ops"
+            "Flask",
+            "Tensorflow"
         ],
         sources: [
             { 
@@ -127,74 +168,12 @@ export const personalProjects = [
             }
         ]
     },
-    {
-        screenshot: "/thumb/stock-market-predictor.png",
-        name: "Stock Market Predictor",
-        desc: "Build predictive model for stock market price using Yahoo! Finance data scraping and Linear Regression",
-        skills: [
-            "Data Scraping",
-            "Machine Learning",
-            "Forecasting",
-            "Financial Technology",
-            "ML Ops"
-        ],
-        sources: [
-            { 
-                icon: <SiStreamlit />,
-                label: "Streamlit", 
-                link: "https://stockmarket-predict.streamlit.app/"
-            },
-            { 
-                icon: <FaGithub/>, 
-                label: "Github", 
-                link: "https://github.com/nrkahfirhmd/stock-market-predict"
-            }
-        ]
-    },
-    {
-        screenshot: "/thumb/credit-risk.png",
-        name: "Credit Risk Analysis",
-        desc: "Analyze the reasons for loan rejection and predict the likelihood of loan acceptance based on user attributes",
-        skills: [
-            "Financial Technology",
-            "ML Ops",
-            "Data Analysis & Visualization",
-            "Predictive Modelling"
-        ],
-        sources: [
-            { 
-                icon: <FaGithub/>, 
-                label: "Github", 
-                link: "https://github.com/nrkahfirhmd/rakamin-idx"
-            }
-        ]
-    },
 ]
 
 export const peopleTestimony = [
-    {
-        image: "profile.jpg",
-        name: "Rayhan Athar",
-        message: "Keren mas"
-    },
-    {
-        image: "profile.jpg",
-        name: "Umar",
-        message: "Walach"
-    },
-    {
-        image: "profile.jpg",
-        name: "Rayhan Athar",
-        message: "Keren mas"
-    },
-    {
-        image: "profile.jpg",
-        name: "Rayhan Athar",
-        message: "Keren mas"
-    },
-    {
-        image: "profile.jpg",
-        name: "Rayhan Athar",
-        message: "Keren mas"
-    },
+    // {
+    //     image: "profile.jpg",
+    //     name: "Rayhan Athar",
+    //     message: "Keren mas"
+    // }
 ]
