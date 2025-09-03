@@ -33,7 +33,7 @@ export default function About() {
                         </span>
                     </div>
                     <div className="text-justify">
-                        As a passionate developer and machine learning engineer based in Bogor, Indonesia, I bring a strong mix of analytical thinking and problem-solving skills to every project. With hands-on experience in Python, TensorFlow, PyTorch, and modern frameworks like React and Next.js, I focus on building intelligent, data-driven applications that deliver real impact. My work spans software development, AI-driven products, data analysis, and automation — turning ideas into scalable and efficient solutions.
+                        As a passionate developer and machine learning engineer based in Bogor, Indonesia, I bring a strong mix of analytical thinking and problem-solving skills to every project. With hands-on experience in Python, TensorFlow, PyTorch, and modern frameworks like React and Next.js, I focus on building intelligent, data-driven applications that deliver real impact — turning ideas into scalable and efficient solutions.
                     </div>
                     <div className="flex gap-2">
                         <button onClick={() => setViewContact(true)} className="hoverable hover:dark:bg-green-200/80 hover:bg-green-500/50 p-4 bg-green-500 dark:bg-green-200 text-white dark:text-(--dark-bg) rounded-lg">
