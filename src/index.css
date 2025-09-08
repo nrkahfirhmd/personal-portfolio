@@ -52,6 +52,8 @@ body {
   --animate-pop: pop 300ms ease-in-out;
   --animate-whoosh: whoosh 1s ease-in-out infinite;
   --animate-spinz: spinz 450ms ease-in;
+  --animate-greet: greet 500ms linear infinite;
+  --animate-go-right: go-right 1s ease-in infinite;
 
   @keyframes pop {
     0% {
@@ -89,6 +91,36 @@ body {
 
     100% {
       transform: translateX(100%);
+    }
+  }
+  
+  
+  @keyframes greet {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    25% {
+      transform: rotateZ(30deg); 
+    }
+    75% {
+      transform: rotateZ(-30deg); 
+    }
+    100% {
+      transform: rotateZ(0deg); 
+    }
+  }
+
+  @keyframes go-right {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(20%);
+    }
+
+    100% {
+      transform: translateX(0%);
     }
   }
 }

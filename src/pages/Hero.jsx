@@ -64,7 +64,7 @@ export default function Hero()
     }
 
     return (
-        <div id="hero" className="relative min-h-screen grid place-items-center px-4" ref={heroRef}>
+        <div id="hero" className="relative min-h-dvh grid place-items-center px-4" ref={heroRef}>
             <div className="absolute inset-0 bg-grid md:hidden"></div>
             <div
                 className="absolute inset-0 bg-grid hidden opacity-0 md:block"
@@ -92,7 +92,7 @@ export default function Hero()
                     </button>
                     <button id="toProjects2" className="hoverable group py-4 px-4 md:px-6 rounded-md hover:text-green-500 hover:dark:text-green-200 transition-color duration-300 flex gap-1 md:gap-2 items-center">
                         See My Work
-                        <FaAngleRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />
+                        <FaAngleRight size={24} className="animate-go-right transition-transform duration-300" />
                     </button>
                 </div>
                 <div className="flex">

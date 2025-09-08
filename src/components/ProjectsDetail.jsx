@@ -1,4 +1,4 @@
-import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoCloseCircle } from "react-icons/io5";
 
 export default function ProjectsDetail({ screenshot, name, role, desc, skills, sources, setActive })
 {
@@ -32,8 +32,8 @@ export default function ProjectsDetail({ screenshot, name, role, desc, skills, s
                     </div>
                 </div>
             </div>
-            <div onClick={() => setActive(false)} className="flex items-center justify-center text-green-500 dark:text-green-200">
-                <IoIosCloseCircleOutline size={64} />
+            <div onClick={() => setActive(false)} className="hoverable flex items-center justify-center text-green-500 dark:text-green-200">
+                <IoCloseCircle size={64} />
             </div>
         </div>
     )

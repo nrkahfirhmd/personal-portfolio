@@ -36,10 +36,10 @@ export default function About() {
                         As a passionate developer and machine learning engineer based in Bogor, Indonesia, I bring a strong mix of analytical thinking and problem-solving skills to every project. With hands-on experience in Python, TensorFlow, PyTorch, and modern frameworks like React and Next.js, I focus on building intelligent, data-driven applications that deliver real impact — turning ideas into scalable and efficient solutions.
                     </div>
                     <div className="flex gap-2">
-                        <button onClick={() => setViewContact(true)} className="hoverable hover:dark:bg-green-200/80 hover:bg-green-500/50 p-4 bg-green-500 dark:bg-green-200 text-white dark:text-(--dark-bg) rounded-lg">
+                        <button onClick={() => setViewContact(true)} className="hoverable hover:dark:text-green-200 hover:text-green-500 border-1 hover:dark:border-green-200 hover:border-green-500 hover:bg-(--light-bg) hover:dark:bg-(--dark-bg) p-4 bg-green-500 dark:bg-green-200 text-white dark:text-(--dark-bg) rounded-lg">
                             Get In Touch
                         </button>
-                        <button id="toProjects4" className="hoverable p-4 border text-green-500 dark:text-green-200 border-green-500 dark:border-green-200 hover:text-green-500/50 hover:dark:text-green-200/80 hover:border-green-500/50 hover:dark:border-green-200/80 rounded-lg">
+                        <button id="toProjects4" className="hoverable p-4 border text-green-500 dark:text-green-200 border-green-500 dark:border-green-200 hover:bg-green-500 hover:dark:bg-green-200 hover:text-(--light-bg) hover:dark:text-(--dark-bg) hover:border-(--light-bg) hover:dark:border-(--dark-bg) rounded-lg">
                             View Projects
                         </button>
                     </div>
