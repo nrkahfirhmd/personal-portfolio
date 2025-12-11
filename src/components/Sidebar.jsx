@@ -8,7 +8,6 @@ export default function Sidebar() {
         { label: 'index', path: '/' },
         { label: 'experience', path: '/experience' },
         { label: 'creation', path: '/creation' },
-        { label: 'now', path: '/now' },
     ]
 
     return (

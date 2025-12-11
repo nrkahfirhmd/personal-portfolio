@@ -1,29 +1,34 @@
 import Experience from "../components/Experience";
 import Terminal from "../components/Terminal";
 import TerminalLine from "../components/TerminalLine";
+import { current_habits, experience } from "../utils/data";
 
 export default function About() {
     return (
         <>
             <Terminal>
                 <TerminalLine command="ps aux">
-                    <p>
+                    <p className="text-[#808080]">
                         currently: 
                         <ul>
-                            <li className="before:content-['-'] before:px-2">re-exploring my interest</li>
-                            <li className="before:content-['-'] before:px-2">improving my english</li>
+                            {current_habits.map((item, i) => (
+                                <li key={i} className="before:content-['-'] before:px-2">{item}</li>
+                            ))}
                         </ul>
                     </p>
                 </TerminalLine>
                 <TerminalLine command="ls la ./experience">
                     <div className="flex flex-col gap-6">
-                        <Experience
-                            role={"transformation office"}
-                            company={"Tunas Group"}
-                            start={"aug 2025"}
-                            end={"dec 2025"}
-                            jobdesc={["mandi", "makan"]}
-                        />
+                        {experience.map((item, i) => (
+                            <Experience
+                                key={i}
+                                role={item.role}
+                                company={item.company}
+                                start={item.start}
+                                end={item.end}
+                                jobdesc={item.jobdesc}
+                            />
+                        ))}
                     </div>
                 </TerminalLine>
             </Terminal>

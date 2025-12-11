@@ -4,10 +4,10 @@ export default function Experience({ role, company, start, end, jobdesc }) {
             <h1 className="text-xl">
                 {role} @ <span className="text-[#00ffdd]">{company}</span>
             </h1>
-            <p className="text-xs text-[#808080]">
+            <p className="text-xs text-[#606060]">
                 {start} - {end}
             </p>
-            <ul className="text-sm">
+            <ul className="text-sm text-[#808080]">
                 {jobdesc.map((item, i) => (
                     <li key={i} className="before:content-['-'] before:px-2">{item}</li>
                 ))}
