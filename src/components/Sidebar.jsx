@@ -1,6 +1,16 @@
 import './Components.css'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Sidebar() {
+    const location = useLocation();
+
+    const menus = [
+        { label: 'index', path: '/' },
+        { label: 'about', path: '/about' },
+        { label: 'work', path: '/work' },
+        { label: 'now', path: '/now' },
+    ]
+
     return (
         <>
             <div className="flex flex-col h-screen justify-between p-10 w-70 border-r-[1px] border-[#808080]">
@@ -9,10 +19,13 @@ export default function Sidebar() {
                 </h1>
 
                 <ul className="text-sm gap-1 flex flex-col">
-                    <li className="nav-list list-selected">index</li>
-                    <li className="nav-list">about</li>
-                    <li className="nav-list">work</li>
-                    <li className="nav-list">now</li>
+                    {menus.map((menu) => (
+                        <li key={menu.path} className={`nav-list ${location.pathname === menu.path ? 'list-selected' : ''}`}>
+                            <Link to={menu.path}>
+                                {menu.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
 
                 <span className="flex flex-col gap-2">
