@@ -1,21 +1,21 @@
-export var portfolio_ver = "11 december 2025"
+export const portfolio_ver = "11 december 2025"
 
-export var role = "Software AI Engineer"
+export const role = "Software AI Engineer"
 
-export var career = "Computer Science @ Padjadjaran University"
+export const career = "Computer Science @ Padjadjaran University"
 
-export var github_link = "https://github.com/nrkahfirhmd"
+export const github_link = "https://github.com/nrkahfirhmd"
 
-export var resume_link = "https://drive.google.com/file/d/1HXmg55788wwLjkgeVSbsvLMDU1kLGiRw/view"
+export const resume_link = "https://drive.google.com/file/d/1HXmg55788wwLjkgeVSbsvLMDU1kLGiRw/preview"
 
-export var bio = "i have a love-hate relationship with code. sometimes i get a dopamine surge from it, but other times it makes me frustrated. yet, i'm addicted to solving complex challenges and building AI-powered solutions. this site is my personal log: a collection of work, thoughts, even my journey."
+export const bio = "i have a love-hate relationship with code. sometimes i get a dopamine surge from it, but other times it makes me frustrated. yet, i'm addicted to solving complex challenges and building AI-powered solutions. this site is my personal log: a collection of work, thoughts, even my journey."
 
-export var current_habits = [
+export const current_habits = [
     're-exploring my interest',
     'improving my english'
 ]
 
-export var experience = [
+export const experience = [
     {
         role: "system engineer",
         company: "Padjadjaran University",
@@ -73,9 +73,9 @@ export var experience = [
     },
 ]
 
-export var interests = "software development, systems, machine learning, artificial intelligence"
+export const interests = "software development, systems, machine learning, artificial intelligence"
 
-export var projects = [
+export const projects = [
     {
         name: "Text2SQL",
         desc: "Building an AI model that can retrieve text instruction, converting it to SQL query, and execute the query to make the data analysis process easier for business stakeholders.",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AsciiDonut from "../components/Donut";
 import DailyQuotes from "../components/Quotes";
 import Terminal from "../components/Terminal";
@@ -21,7 +22,7 @@ export default function Hero() {
                             </span>
                             <span className="text-sm flex gap-2 underline">
                                 <a href={github_link} target="_blank" className="hover:text-[#808080] cursor-pointer">github</a>
-                                <a href={resume_link} target="_blank" className="hover:text-[#808080] cursor-pointer">resume</a>
+                                <Link to={'/resume'} className="hover:text-[#808080] cursor-pointer">resume</Link>
                             </span>
                         </div>
                     </div>
