@@ -7,10 +7,10 @@ export default function App() {
   return (
     <div className="flex">
       <Sidebar/>
-      <div className="flex-1 p-8 h-screen overflow-y-auto flex justify-center items-center">
+      <div className="flex-1 p-8 min-h-screen overflow-y-scroll flex justify-center items-center">
         <Routes>
           <Route path="/" element={<Hero/>} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/experience" element={<About/>} />
         </Routes>
       </div>
     </div>

@@ -6,14 +6,14 @@ export default function Sidebar() {
 
     const menus = [
         { label: 'index', path: '/' },
-        { label: 'about', path: '/about' },
-        { label: 'work', path: '/work' },
+        { label: 'experience', path: '/experience' },
+        { label: 'creation', path: '/creation' },
         { label: 'now', path: '/now' },
     ]
 
     return (
         <>
-            <div className="flex flex-col h-screen justify-between p-10 w-70 border-r-[1px] border-[#808080]">
+            <div className="flex sticky top-0 flex-col h-screen justify-between p-10 w-70 border-r-[1px] border-[#808080]">
                 <span className='flex flex-col gap-1'>
                     <p className='text-xs text-[#808080]'>$ sudo -i</p>
                     <h1 className="font-bold text-[#00ffdd]">
