@@ -14,9 +14,12 @@ export default function Sidebar() {
     return (
         <>
             <div className="flex flex-col h-screen justify-between p-10 w-70 border-r-[1px] border-[#808080]">
-                <h1 className="font-bold text-[#00ffdd]">
-                    nrkahfirhmd
-                </h1>
+                <span className='flex flex-col gap-1'>
+                    <p className='text-xs text-[#808080]'>$ sudo -i</p>
+                    <h1 className="font-bold text-[#00ffdd]">
+                        nrkahfirhmd
+                    </h1>
+                </span>
 
                 <ul className="text-sm gap-1 flex flex-col">
                     {menus.map((menu) => (

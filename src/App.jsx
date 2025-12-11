@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="flex">
       <Sidebar/>
-      <div className="flex-1 p-7 h-screen overflow-y-auto">
+      <div className="flex-1 p-8 h-screen overflow-y-auto flex justify-center items-center">
         <Routes>
           <Route path="/" element={<Hero/>} />
           <Route path="/about" element={<About/>} />
