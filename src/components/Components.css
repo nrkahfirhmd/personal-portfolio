@@ -1,0 +1,22 @@
+.nav-list::before {
+    content: '$';
+    padding: 6px;
+    font-size: x-small;
+    color: gray;
+}
+
+.nav-list {
+    color: gray;
+}
+
+.nav-list:hover {
+    color: white;
+}
+
+.list-selected {
+    color: #00ffdd;
+}
+
+.list-selected:hover {
+    color: #00ffdd;
+}
