@@ -25,7 +25,27 @@ export var experience = [
             "mandi",
             "makan"
         ]
-    }
+    },
+    {
+        role: "transformation office",
+        company: "Tunas Group",
+        start: "aug 2025",
+        end: "dec 2025",
+        jobdesc: [
+            "mandi",
+            "makan"
+        ]
+    },
+    {
+        role: "teaching assistant",
+        company: "Tunas Group",
+        start: "aug 2025",
+        end: "dec 2025",
+        jobdesc: [
+            "mandi",
+            "makan"
+        ]
+    },
 ]
 
 export var interests = "software development, systems, machine learning, artificial intelligence"
