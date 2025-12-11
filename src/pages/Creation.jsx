@@ -14,7 +14,7 @@ export default function Creation() {
                     </p>
                 </TerminalLine>
                 <TerminalLine command="ls ./projects --featured">
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-6">
                         {projects.map((item, i) => (
                             <Project
                                 key={i}
