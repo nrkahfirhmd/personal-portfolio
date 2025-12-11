@@ -6,7 +6,7 @@ import Creation from "./pages/Creation";
 
 export default function App() {
   return (
-    <div className="flex">
+    <div className="flex flex-col lg:flex-row">
       <Sidebar/>
       <div className="flex-1 p-8 min-h-screen overflow-y-scroll flex justify-center items-center">
         <Routes>

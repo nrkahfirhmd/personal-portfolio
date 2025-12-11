@@ -9,8 +9,8 @@ export default function Hero() {
         <>
             <Terminal>
                 <TerminalLine command="whoami">
-                    <div className="p-4 w-full h-full flex gap-2">
-                        <div>
+                    <div className="lg:p-4 w-full h-full flex gap-2">
+                        <div className="hidden lg:block">
                             <AsciiDonut/>
                         </div>
                         <div className="flex flex-col justify-between">
