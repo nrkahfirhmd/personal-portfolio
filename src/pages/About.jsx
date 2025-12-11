@@ -8,7 +8,6 @@ export default function About() {
             <Terminal>
                 <TerminalLine command="ps aux">
                     <p>
-                        <p className="text-[#808080] text-xs">last update: 11 december 2025</p>
                         currently: 
                         <ul>
                             <li className="before:content-['-'] before:px-2">re-exploring my interest</li>

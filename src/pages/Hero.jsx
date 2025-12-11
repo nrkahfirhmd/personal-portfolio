@@ -35,6 +35,9 @@ export default function Hero() {
                         <DailyQuotes/>
                     </span>
                 </TerminalLine>
+                <TerminalLine command="portfolio --version">
+                    <p className="text-[#808080] text-xs">last update: 11 december 2025</p>
+                </TerminalLine>
             </Terminal>
         </>
     )

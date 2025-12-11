@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
+import Creation from "./pages/Creation";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Hero/>} />
           <Route path="/experience" element={<About/>} />
+          <Route path="/creation" element={<Creation/>} />
         </Routes>
       </div>
     </div>
