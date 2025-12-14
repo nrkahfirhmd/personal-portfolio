@@ -10,6 +10,8 @@
   color-scheme: light dark;
   color: #ffffff;
   background-color: #0F0F0F;
+  --color-bg: #0c0c0c;
+  --color-text: #808080;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,5 +23,23 @@
   :root {
     color: #213547;
     background-color: #ffffff;
+  }
+}
+
+@layer {
+  :root {
+    --color-primary: #00ffdd;
+  }
+
+  [data-theme='green'] {
+    --color-primary: #C6D870;
+  }
+  
+  [data-theme='pink'] {
+    --color-primary: #FFB8E0;
+  }
+
+  [data-theme='orange'] {
+    --color-primary: #FF9D23;
   }
 }

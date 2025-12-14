@@ -8,7 +8,7 @@ export default function Creation() {
         <>
             <Terminal>
                 <TerminalLine command="ps aux">
-                    <p className="text-[#808080]">
+                    <p className="text-[var(--color-text)]">
                         <p>my interests:</p>
                         <p>{interests}</p>
                     </p>

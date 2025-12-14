@@ -5,11 +5,13 @@ import About from "./pages/About";
 import Creation from "./pages/Creation";
 import MatrixBackground from "./components/MatrixBackground";
 import Resume from "./pages/Resume";
+import ThemeModal from "./components/ThemeModal";
 
 export default function App() {
   return (
     <div className="flex flex-col lg:flex-row">
       <MatrixBackground/>
+      <ThemeModal/>
       <Sidebar/>
       <div className="flex-1 p-8 min-h-screen overflow-y-scroll flex justify-center items-center">
         <Routes>

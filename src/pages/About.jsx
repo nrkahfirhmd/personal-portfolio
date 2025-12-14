@@ -8,7 +8,7 @@ export default function About() {
         <>
             <Terminal>
                 <TerminalLine command="ps aux">
-                    <p className="text-[#808080]">
+                    <p className="text-[var(--color-text)]">
                         currently: 
                         <ul>
                             {current_habits.map((item, i) => (

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const AsciiDonut = ({ color = "text-[#00ffdd]" }) => {
+const AsciiDonut = ({ color = "text-[var(--color-primary)]" }) => {
     const [frame, setFrame] = useState('');
     const requestRef = useRef();
     const A = useRef(0);

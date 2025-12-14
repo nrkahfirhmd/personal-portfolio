@@ -12,10 +12,10 @@ export default function Sidebar() {
 
     return (
         <>
-            <div className="flex lg:sticky top-0 lg:flex-col lg:h-screen justify-between p-4 lg:p-10 w-full lg:w-70 border-b-[1px] lg:border-r-[1px] border-[#808080]">
+            <div className="flex lg:sticky top-0 lg:flex-col lg:h-screen justify-between p-4 lg:p-10 w-full lg:w-70 border-b-[1px] lg:border-r-[1px] border-[var(--color-text)]">
                 <span className='flex flex-col gap-1'>
-                    <p className='text-xs text-[#808080] hidden lg:block'>$ sudo -i</p>
-                    <h1 className="font-bold text-[#00ffdd]">
+                    <p className='text-xs text-[var(--color-text)] hidden lg:block'>$ sudo -i</p>
+                    <h1 className="font-bold text-[var(--color-primary)]">
                         nrkahfirhmd
                     </h1>
                 </span>
@@ -30,11 +30,16 @@ export default function Sidebar() {
                     ))}
                 </ul>
 
-                <span className="flex flex-col gap-2 hidden lg:block">
-                    <div className="h-[1px] w-full bg-[#808080]" />
-                    <p className="text-xs text-[#808080]">
-                        &copy; 2025
-                    </p>
+                <span className="flex-col gap-4 hidden lg:flex">
+                    <div className='bg-[var(--color-bg)] p-2 rounded-lg'>
+                        <p className='text-[10px] text-[var(--color-primary)]'>[shift] + [T] change theme</p>
+                    </div>
+                    <div>
+                        <div className="h-[1px] w-full bg-[var(--color-text)]" />
+                        <p className="text-xs text-[var(--color-text)]">
+                            &copy; 2025
+                        </p>
+                    </div>
                 </span>
             </div>
         </>

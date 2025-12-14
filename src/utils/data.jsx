@@ -1,4 +1,4 @@
-export const portfolio_ver = "11 december 2025"
+export const portfolio_ver = "14 december 2025"
 
 export const role = "Software AI Engineer"
 
@@ -24,7 +24,7 @@ export const experience = [
         jobdesc: [
             "maintaining Guriang server, a computing facility which recently had been shutdown because of security issues",
             "updating & upgrading the operating systems packages",
-            "setup & testing Slurm accross 6 nodes"
+            "setup & testing Slurm across 6 nodes"
         ]
     },
     {
@@ -35,7 +35,7 @@ export const experience = [
         jobdesc: [
             "developing a workload analysis for the Tax division and conduct a Gap Analysis to asses the potential improvements",
             "building a Chrome Extension to extract data from the Coretax website, reducing processing time from approximately 10 minutes to just 10 - 15 seconds, achieving 97.5% improvement",
-            "creating a KNIME workflow for automating tax reconcile process accross 4 subsidiary, improving 90% of processing time"
+            "creating a KNIME workflow for automating tax reconcile process across 4 business units, improving 90% of processing time"
         ]
     },
     {

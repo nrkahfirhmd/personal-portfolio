@@ -1,5 +1,5 @@
 .nav-list {
-    color: gray;
+    color: var(--color-text);
 }
 
 .nav-list:hover {
@@ -7,11 +7,11 @@
 }
 
 .list-selected {
-    color: #00ffdd;
+    color: var(--color-primary);
 }
 
 .list-selected:hover {
-    color: #00ffdd;
+    color: var(--color-primary);
 }
 
 @media (min-width: 1024px) {
@@ -19,6 +19,6 @@
         content: '$';
         padding: 6px;
         font-size: x-small;
-        color: gray;
+        color: var(--color-text);
     }
 }
