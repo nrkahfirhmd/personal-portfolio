@@ -1,4 +1,4 @@
-export const portfolio_ver = "14 december 2025"
+export const portfolio_ver = "24 december 2025"
 
 export const role = "Software AI Engineer"
 
