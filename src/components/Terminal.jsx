@@ -17,7 +17,7 @@ const Terminal = ({ children, title = "terminal@nrkahfirhmd:~" }) => {
                 </p>
             </div>
             
-            <div className="p-6 flex flex-col gap-6 text-gray-300">
+            <div className="p-6 flex max-h-150 scroller overflow-y-auto flex-col gap-6 text-gray-300">
                 {children}
             </div>
         </div>

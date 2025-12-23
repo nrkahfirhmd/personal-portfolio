@@ -6,6 +6,7 @@ import Creation from "./pages/Creation";
 import MatrixBackground from "./components/MatrixBackground";
 import Resume from "./pages/Resume";
 import ThemeModal from "./components/ThemeModal";
+import Chat from "./pages/Chat";
 
 export default function App() {
   return (
@@ -13,12 +14,13 @@ export default function App() {
       <MatrixBackground/>
       <ThemeModal/>
       <Sidebar/>
-      <div className="flex-1 p-8 min-h-screen overflow-y-scroll flex justify-center items-center">
+      <div className="flex-1 p-8 flex justify-center items-center">
         <Routes>
           <Route path="/" element={<Hero/>} />
           <Route path="/experience" element={<About/>} />
           <Route path="/creation" element={<Creation/>} />
           <Route path="/resume" element={<Resume/>} />
+          <Route path="/chat" element={<Chat/>} />
         </Routes>
       </div>
     </div>
