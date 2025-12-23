@@ -10,7 +10,7 @@ import Chat from "./pages/Chat";
 
 export default function App() {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="h-dvh flex flex-col lg:flex-row">
       <MatrixBackground/>
       <ThemeModal/>
       <Sidebar/>

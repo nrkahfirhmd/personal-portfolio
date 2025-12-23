@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     try {
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
 
         const context = `
             You are a helpful and professional portfolio assistant for Nurkahfi.
@@ -26,6 +26,7 @@ export default async function handler(req, res) {
             [INSTRUCTIONS]
             - Keep answers concise and friendly.
             - The question can be in Indonesian or English, adjust with user language
+            - Just make the output one paragraph long and don't use complex formatting like bold, numbering, etc
             - If the answer isn't in the context, say: "I don't have that info, but you can email Kahfi directly!"
             - Do not make up facts.
         `;
@@ -37,6 +38,6 @@ export default async function handler(req, res) {
         res.status(200).json({ reply: text });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: 'Something Went Wrong' });
+        res.status(500).json({ error: 'Something Went Wrong', message: error });
     }
 }
