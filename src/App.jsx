@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Sidebar from "./components/Sidebar";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+    return (
+        <>
+            <div className="min-h-dvh bg-(--color-background) flex flex-col lg:flex-row">
+                <Sidebar/>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+                <div className="w-full h-dvh">
+                    {/* <div className="flex flex-col gap-4 px-20 py-16 gap-4 w-full h-full">
+                        <div className="flex w-full flex-col gap-2">
+                            <h1 className="font-bold text-4xl">Kahfi is a software developer who builds smart, scalable, and high impact solutions through his specialization in Software Engineering and Artificial Intelligence</h1>
+                            <p className="text-xl">Hi there, this site is my personal log where I share my experience as a growing developer. In this site you will see my collection of work, thoughts, journey, even my gallery of failure. If you interested in getting to know me more, just hit the button below</p>
+                        </div>
+
+                        <div>
+                            <button className="rounded-lg bg-gray-200 p-3 cursor-pointer"> 
+                                Learn More
+                            </button>
+                        </div>
+
+                        <div>
+                            
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+        </>
+    )
 }
-
-export default App

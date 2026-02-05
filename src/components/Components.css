@@ -1,0 +1,12 @@
+.nav {
+    position: relative;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.nav:hover {
+    background: #eeeeee;
+}
