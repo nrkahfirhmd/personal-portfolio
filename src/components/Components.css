@@ -10,3 +10,28 @@
 .nav:hover {
     background: #eeeeee;
 }
+
+.glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background-color: rgb(103, 103, 250);
+    filter: blur(100px);
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

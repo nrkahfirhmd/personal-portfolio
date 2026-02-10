@@ -6,9 +6,9 @@ export default function Sidebar() {
     const [open, setIsOpen] = useState(true);
 
     return (
-        <div className='fixed lg:w-[20%] w-full h-dvh top-0'>
+        <div className={`${open ? "bg-white h-dvh" : ""} z-50 sticky lg:w-[20%] w-full top-0`}>
             <div className="w-full h-full lg:h-dvh gap-2 flex flex-col lg:border-r border-black">
-                <div className='flex w-full justify-between border-b lg:border-none border-black relative'>
+                <div className='bg-white flex w-full justify-between border-b lg:border-none border-black relative'>
                     <div className={`h-full w-full flex lg:flex-col lg:p-6 gap-4 lg:justify-center lg:items-center ${open ? "flex-col px-6 py-4" : "items-center p-2"}`}>
                         <div className={`${open ? "w-25" : "w-15"} lg:w-40 rounded-full overflow-hidden transition-all transition-500`}>
                             <img src="/photo.jpg" alt="potrait" className="" />
