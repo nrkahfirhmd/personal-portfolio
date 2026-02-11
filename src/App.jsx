@@ -1,6 +1,7 @@
 import { MdOutlineOpenInNew } from "react-icons/md";
 import Sidebar from "./components/Sidebar";
 import Stars from "./components/Stars";
+import { hero, introduction, positionEx } from "./utils/data";
 
 export default function App() {
     return (
@@ -12,8 +13,8 @@ export default function App() {
                     <div className="flex flex-col px-8 py-12 lg:px-20 lg:py-16 gap-12 lg:gap-24 w-full h-full">
                         <div className="flex flex-col gap-4 w-full">
                             <div className="flex w-full flex-col gap-2">
-                                <h1 className="font-bold text-xl lg:text-4xl">Kahfi is a software developer who builds smart, scalable, and high impact solutions through his specialization in Software Engineering and Artificial Intelligence</h1>
-                                <p className="text-sm lg:text-xl">Hi there, this site is my personal log where I share my experience as a growing developer. In this site you will see my collection of work, thoughts, journey, even my museum of failure. If you interested in getting to know me more, just hit the button below</p>
+                                <h1 className="font-bold text-xl lg:text-4xl">{hero}</h1>
+                                <p className="text-sm lg:text-xl">{introduction}</p>
                             </div>
 
                             <div>
@@ -35,33 +36,21 @@ export default function App() {
                                 </div>
                                 
                                 <div className="flex flex-col gap-4">
-                                    <div>
-                                        <span className="flex gap-2 items-center">
-                                            <h1 className="font-bold">
-                                                Prabu 2025
-                                            </h1>
-                                            <h6 className="bg-gray-200 p-[3px] text-xs rounded-lg">
-                                                2025
-                                            </h6>
-                                        </span>
-                                        <h2 className="text-sm">
-                                            Frontend Developer
-                                        </h2>
-                                    </div>
-
-                                    <div>
-                                        <span className="flex gap-2 items-center">
-                                            <h1 className="font-bold">
-                                                Prabu 2025
-                                            </h1>
-                                            <h6 className="bg-gray-200 p-[3px] text-xs rounded-lg">
-                                                2025
-                                            </h6>
-                                        </span>
-                                        <h2 className="text-sm">
-                                            Frontend Developer
-                                        </h2>
-                                    </div>
+                                    {positionEx.map((data, i) => (
+                                        <div key={i}>
+                                            <span className="flex gap-2 items-center">
+                                                <h1 className="font-bold">
+                                                    {data.company}
+                                                </h1>
+                                                <h6 className="bg-gray-200 p-[3px] text-xs rounded-lg">
+                                                    {data.time}
+                                                </h6>
+                                            </span>
+                                            <h2 className="text-sm">
+                                                {data.position}
+                                            </h2>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 

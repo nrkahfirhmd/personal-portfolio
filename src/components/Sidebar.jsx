@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import './Components.css'
 import { FaChevronDown } from 'react-icons/fa';
+import { title } from '../utils/data';
+
+const navigation = [
+    { title: "index", href: "/" },
+    { title: "creation", href: "/creation" },
+]
 
 export default function Sidebar() {
     const [open, setIsOpen] = useState(true);
 
     return (
-        <div className={`${open ? "bg-white h-dvh" : ""} z-50 sticky lg:w-[20%] w-full top-0`}>
+        <div className={`${open ? "bg-(--color-background) h-dvh" : ""} z-50 sticky lg:w-[20%] w-full top-0`}>
             <div className="w-full h-full lg:h-dvh gap-2 flex flex-col lg:border-r border-black">
-                <div className='bg-white flex w-full justify-between border-b lg:border-none border-black relative'>
+                <div className='bg-(--color-background) flex w-full justify-between border-b lg:border-none border-black relative'>
                     <div className={`h-full w-full flex lg:flex-col lg:p-6 gap-4 lg:justify-center lg:items-center ${open ? "flex-col px-6 py-4" : "items-center p-2"}`}>
                         <div className={`${open ? "w-25" : "w-15"} lg:w-40 rounded-full overflow-hidden transition-all transition-500`}>
                             <img src="/photo.jpg" alt="potrait" className="" />
@@ -18,7 +24,7 @@ export default function Sidebar() {
                                 Nurkahfi <p className={`${open ? "block" : "hidden"} lg:block`}>Rahmada</p> 
                             </h1>
                             <h2 className={`text-sm ${open ? "block" : "hidden"}`}>
-                                Growing Developer
+                                {title}
                             </h2>
                         </div>
                     </div>
@@ -33,10 +39,9 @@ export default function Sidebar() {
                         <div className={`flex flex-col gap-2 h-dvh`}>
                             <div className="lg:block h-full">
                                 <ul className="flex flex-col text-sm">
-                                    <li className="nav">index</li>
-                                    <li className="nav ">experience</li>
-                                    <li className="nav">creation</li>
-                                    <li className="nav">about</li>
+                                    {navigation.map((data, i) => (
+                                        <li key={i} className="nav">{data.title}</li>
+                                    ))}
                                 </ul>
                             </div>
 
