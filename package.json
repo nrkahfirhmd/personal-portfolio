@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "lucide-react": "^1.21.0",
     "motion": "^11",
     "next": "16.2.9",
     "next-mdx-remote": "^5",

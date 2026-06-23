@@ -270,6 +270,16 @@
   * {
     border-color: var(--c-border);
   }
+
+  /* Main content area fills remaining flex space → footer sticks to bottom */
+  #main-content {
+    flex: 1;
+  }
+
+  /* Mobile nav <dialog> fills the viewport — no default browser backdrop needed */
+  dialog::backdrop {
+    display: none;
+  }
 }
 
 /* ============================================================
