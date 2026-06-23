@@ -15,8 +15,7 @@ export const meta: Meta = {
   },
   availability: null,
   email: "",
-  photo: undefined,
-  tools: [],
+tools: [],
   links: [],
   resume: "/resume.pdf",
 }
