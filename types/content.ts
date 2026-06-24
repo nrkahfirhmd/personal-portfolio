@@ -4,6 +4,20 @@ export interface SocialLink {
   icon: "github" | "linkedin" | "twitter" | "email"
 }
 
+export interface Stat {
+  /** Display value. e.g. "5+" or "30" */
+  value: string
+  /** Short label below the value. e.g. "Years of experience" */
+  label: string
+}
+
+export interface Principle {
+  /** Short title. 1–3 words. e.g. "Craft" or "Performance First" */
+  title: string
+  /** 1–2 sentences expanding on the principle. */
+  body: string
+}
+
 export interface Meta {
   name: string
   role: string
@@ -22,6 +36,10 @@ export interface Meta {
   photo?: string
   /** Tech tags shown in About section. No skill bars — just names. */
   tools: string[]
+  /** 3–4 numbers. Displayed in the About sidebar. Optional. */
+  stats?: Stat[]
+  /** 2–3 core principles. Displayed below the bio paragraphs. Optional. */
+  philosophy?: Principle[]
   links: SocialLink[]
   /** Path to resume PDF in /public/. e.g. "/resume.pdf" */
   resume: string

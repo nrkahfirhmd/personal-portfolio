@@ -16,6 +16,25 @@ export const meta: Meta = {
   },
   availability: null,
   email: "nurkahfirahmada@gmail.com",
+  stats: [
+    { value: "5+", label: "Years building for the web" },
+    { value: "30+", label: "Products shipped" },
+    { value: "∞", label: "Tabs open at any given time" },
+  ],
+  philosophy: [
+    {
+      title: "Craft",
+      body: "Interfaces should feel inevitable. Every pixel, every transition, every label earns its place by serving the person using it — nothing more.",
+    },
+    {
+      title: "Performance is design",
+      body: "A page that loads instantly is better design, not just better engineering. Speed is a direct measure of respect for the user's time.",
+    },
+    {
+      title: "Invisible quality",
+      body: "The best interfaces are the ones that stay out of the way. The craft is making complexity disappear without making the work look easy.",
+    },
+  ],
   tools: [
     "Next.js",
     "React",
