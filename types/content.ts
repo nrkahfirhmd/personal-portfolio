@@ -109,9 +109,17 @@ export interface Experiment {
 
 export interface ExperienceItem {
   company: string
+  /** Optional: company website for a subtle link on the company name. */
+  url?: string
   role: string
+  /** "Full-time" | "Contract" | "Freelance" | "Internship" | "Part-time" */
+  type?: string
   /** e.g. "2022 – 2024" */
   period: string
+  /** 1–2 sentences of role context — what the team/product does, your scope. */
+  description?: string
   /** Outcome-focused bullet points. 2–3 per role. */
   accomplishments: string[]
+  /** Marks the current role. Shows a "Current" badge and accent dot. */
+  current?: boolean
 }
