@@ -1,3 +1,21 @@
+export interface Skill {
+  name: string
+  /**
+   * core      — Daily driver. Deep knowledge. Ships production systems with it.
+   * proficient — Ships confidently. Understands internals well.
+   * familiar   — Has shipped with it. Can contribute without ramping up.
+   */
+  level: "core" | "proficient" | "familiar"
+}
+
+export interface SkillCategory {
+  /** Display name. e.g. "Frontend", "Backend & Data", "Tooling" */
+  name: string
+  /** 1–2 sentences of context. What role does this category play in your work? */
+  description: string
+  skills: Skill[]
+}
+
 export interface SocialLink {
   label: string
   url: string
