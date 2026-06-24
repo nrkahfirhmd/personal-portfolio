@@ -43,6 +43,19 @@ export const meta: Meta = {
     "Node.js",
     "Figma",
   ],
-  links: [],
+  links: [
+    {
+      label: "GitHub",
+      url: "https://github.com/nurkahfirahmada",
+      icon: "github",
+      handle: "@nurkahfirahmada",
+    },
+    {
+      label: "LinkedIn",
+      url: "https://linkedin.com/in/nurkahfirahmada",
+      icon: "linkedin",
+      handle: "Nurkahfi Rahmada",
+    },
+  ],
   resume: "/resume.pdf",
 }

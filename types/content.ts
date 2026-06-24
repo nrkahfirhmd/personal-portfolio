@@ -20,6 +20,8 @@ export interface SocialLink {
   label: string
   url: string
   icon: "github" | "linkedin" | "twitter" | "email"
+  /** Shown in the contact page list variant. e.g. "@username" or "Full Name" */
+  handle?: string
 }
 
 export interface Stat {
